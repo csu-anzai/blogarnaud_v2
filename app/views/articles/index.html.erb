@@ -1,16 +1,17 @@
+<!-- add spacer for navbar -->
 <div class="navbar-spacer"></div>
 
 <main class="container-main">
   <!-- iterate through all articles and create a card for each of them -->
   <% @articles.each do |article| %>
     <!-- create a card for the article -->
-    <figure class="card-article">
+    <figure class="card-article-index">
       <!-- article image -->
       <%= cl_image_tag article.photo, height: 300, width: 400, crop: :fill %>
       <!-- article presentation -->
-      <figcaption class="card-article-summary">
+      <figcaption class="card-article-index-summary">
         <!-- header for date and tag -->
-        <div class="card-article-header">
+        <div class="card-article-index-header">
           <%= article.date %> |
           <%= article.tag.name %>
         </div>

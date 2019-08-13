@@ -44,7 +44,7 @@ puts "---creating tag for (10/12) ecology"
 ecology = Tag.create(name: "Ecology", icon: "icon_impact_ecology.svg")
 
 puts "---creating tag for (11/12) animal care"
-animal_care = Tag.create(name: "Soins aux animaux", icon: "icon_impact_animal_care.svg")
+animal_care = Tag.create(name: "Soins aux animaux", icon: "icon_impact_animal-care.svg")
 
 puts "---creating tag for (12/12) responsible agriculture"
 agriculture = Tag.create(name: "Agriculture responsable", icon: "icon_impact_agriculture.svg")
