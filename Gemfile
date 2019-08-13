@@ -1,13 +1,17 @@
 source 'https://rubygems.org'
 ruby '2.6.3'
 
+# gems added for picture upload and serve
+gem 'cloudinary', '~> 1.9.1'
+gem 'carrierwave', '~> 1.2'
+
+# gems from le wagon minimal template
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '6.0.0.rc1'
 gem 'redis'
-
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'sassc-rails'
