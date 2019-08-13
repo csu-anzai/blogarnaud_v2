@@ -1,0 +1,50 @@
+<nav class="navbar">
+  <!-- logo -->
+  <section class="navbar-logo">
+    <%= link_to root_path do %>
+      <div>AR</div>
+    <% end %>
+  </section>
+
+  <!--  main navbar menu -->
+  <section class="navbar-items">
+    <!-- articles -->
+    <section class="navbar-item">
+      <%= link_to articles_path do %>
+        <%= image_tag('icon_nav_news.svg') %>
+      <% end %>
+    </section>
+    <!-- entreprises -->
+    <section class="navbar-item">
+      <%= link_to articles_path do %>
+        <%= image_tag('icon_nav_startup.svg') %>
+      <% end %>
+    </section>
+    <!-- profile -->
+    <section class="navbar-item">
+      <%= link_to profile_path do %>
+        <%= image_tag('icon_nav_profile.svg') %>
+      <% end %>
+    </section>
+    <!-- contact -->
+    <section class="navbar-item">
+      <%= link_to contact_path do %>
+        <%= image_tag('icon_nav_email.svg') %>
+      <% end %>
+    </section>
+  </section>
+
+  <!-- right-side of the navbar -->
+  <section class="navbar-right">
+    <section class="navbar-right-search">
+      <%= link_to articles_path do %>
+        <%= image_tag('icon_nav_search.svg') %>
+      <% end %>
+    </section>
+    <section class="navbar-right-language">
+      <div>FR</div>
+      <div>EN</div>
+    </section>
+  </section>
+
+</nav>
