@@ -1,2 +1,58 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- carousel with the profile picture as active item and the 5 latest posts -->
+<main class="carousel-full-page">
+  <section id="carousel-home-page" class="carousel slide" data-ride="carousel">
+
+    <!-- carousel indicator bars at the bottom of images -->
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+    </ol>
+
+   <!--  sections of the carousel -->
+    <figure class="carousel-inner">
+
+      <!-- first section with link to profile active by default when landing to the homepage -->
+      <section class="carousel-item active">
+        <div class="carousel-image-wrapper">
+          <%= image_tag('img_arnaudrioche.png', class: "d-block w-100 carousel-image") %>
+        </div>
+        <div class="carousel-banner">
+          <h1>First slide label</h1>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <%= link_to "Profil ->", profile_path %>
+        </div>
+      </section>
+
+      <!-- other sections, automatically fed with the 5 latest posts -->
+      <% @articles.each do |article| %>
+        <section class="carousel-item">
+          <div class="carousel-image-wrapper">
+            <%= cl_image_tag article.photo, class: "d-block w-100 carousel-image" %>
+          </div>
+          <div class="carousel-banner">
+            <h1><%= article.title %></h1>
+            <p><%= truncate(strip_tags(article.content_fr.to_s), length: 450) %></p>
+            <%= link_to "Lire ->", article_path(article) %>
+          </div>
+        </section>
+      <% end %>
+    </figure>
+
+   <!--  control left and right arrows for the carousel -->
+    <a class="carousel-control-prev" href="#carousel-home-page" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+
+    <a class="carousel-control-next" href="#carousel-home-page" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </section>>
+</main>
+
