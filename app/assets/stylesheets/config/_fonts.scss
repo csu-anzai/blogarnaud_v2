@@ -10,9 +10,29 @@ $logo-font: "Tangerine", cursive;
 //definition of standard font styles
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: $body-font;
-  font-size: .85em;
-}
+// body {
+//   font-family: $body-font;
+//   font-size: .85em;
+// }
+
+// p {
+//   font-family: $body-font;
+//   font-size: 1em;
+//   color: $dark-blue;
+// }
+
+
+// h1 {
+//   font-family: $headers-font;
+//   font-size: 1.4em;
+//   color: $dark-blue;
+// }
+
+// h2 {
+//   font-family: $headers-font;
+//   font-size: 1.3em !important;
+//   color: $dark-blue;
+// }
