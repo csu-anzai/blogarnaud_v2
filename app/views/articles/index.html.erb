@@ -1,2 +1,25 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+<div class="navbar-spacer"></div>
+
+<main class="container-main">
+  <!-- iterate through all articles and create a card for each of them -->
+  <% @articles.each do |article| %>
+    <!-- create a card for the article -->
+    <figure class="card-article">
+      <!-- article image -->
+      <%= cl_image_tag article.photo, height: 300, width: 400, crop: :fill %>
+      <!-- article presentation -->
+      <figcaption class="card-article-summary">
+        <!-- header for date and tag -->
+        <div class="card-article-header">
+          <%= article.date %> |
+          <%= article.tag.name %>
+        </div>
+        <!-- title and truncated content -->
+        <h2><%= article.title %></h2>
+        <p><%= truncate(strip_tags(article.content_fr.to_s), length: 600) %></p>
+        <!-- link to article -->
+        <%= link_to "Lire ->", article_path(article) %>
+      </figcaption>
+    </figure>
+  <% end %>
+</main>
