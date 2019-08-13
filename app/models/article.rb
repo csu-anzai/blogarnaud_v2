@@ -7,4 +7,7 @@ class Article < ApplicationRecord
   validates :photo, presence: true
 
   mount_uploader :photo, PhotoUploader
+
+  has_rich_text :content_fr
+  has_rich_text :content_en
 end
