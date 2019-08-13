@@ -1,2 +1,62 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<!-- add spacer for navbar -->
+<div class="navbar-spacer"></div>
+
+<main class="container-main">
+
+  <!-- create card for article title -->
+  <section class="card-article-show-title">
+    <section class="card-article-show-title-tag">
+      <!-- variable to store path to tag icon -->
+      <% path = @article.tag.icon %>
+     <!--  display tag icon -->
+      <%= image_tag(path) %>
+      <!-- display tag name -->
+     <h2><%= @article.tag.name %></h2>
+    </section>
+    <p><%= @article.date %></p>
+    <h1><%= @article.title %></h1>
+    <%= cl_image_tag @article.photo %>
+  </section>
+
+  <!-- create card for article content -->
+  <section class="card-article-show-content">
+    <%= @article.content_fr %>
+  </section>
+
+  <!-- create card for article share -->
+  <section class="card-article-show-share">
+    <h2>Partagez cet article !</h3>
+    <section class="card-article-show-share-medias">
+      <!-- linkedin -->
+      <%= link_to "#" do %>
+        <i class="fab fa-linkedin"></i>
+      <% end %>
+      <!-- viadeo -->
+      <%= link_to "#" do %>
+        <i class="fab fa-viadeo-square"></i>
+      <% end %>
+      <!-- twitter -->
+      <%= link_to "#" do %>
+        <i class="fab fa-twitter-square"></i>
+      <% end %>
+      <!-- facebook -->
+      <%= link_to "#" do %>
+        <i class="fab fa-facebook-square"></i>
+      <% end %>
+       <!-- email -->
+      <%= link_to "#" do %>
+        <i class="fas fa-paper-plane"></i>
+      <% end %>
+    </section>
+  </section>
+
+  <!-- create card for article read more -->
+  <section class="card-article-show-readmore">
+    <h2>Lire aussi :</h2>
+    <p>A faire une fois Search terminée</p>
+  </section>
+
+</main>
+
+<!-- footer -->
+<%= render 'shared/footer' %>
