@@ -1,25 +1,15 @@
 Rails.application.routes.draw do
-  get 'readers/index'
-  get 'readers/show'
-  get 'readers/new'
-  get 'readers/create'
-  get 'readers/edit'
-  get 'readers/update'
-  get 'readers/destroy'
-  get 'tags/index'
-  get 'tags/show'
-  get 'tags/new'
-  get 'tags/create'
-  get 'tags/edit'
-  get 'tags/update'
-  get 'tags/destroy'
-  get 'articles/index'
-  get 'articles/show'
-  get 'articles/new'
-  get 'articles/create'
-  get 'articles/edit'
-  get 'articles/update'
-  get 'articles/destroy'
+  # define homepgae
   root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # crud routes for tags
+  resources :tags
+  # crud routes for articles
+  resources :articles
+  # crud routes for readers
+  resources :readers
+  # route for profile
+  get "/profile", to: 'pages#profile', as: "profile"
+   # route for contact
+  get "/contact", to: 'pages#contact', as: "contact"
 end
+
