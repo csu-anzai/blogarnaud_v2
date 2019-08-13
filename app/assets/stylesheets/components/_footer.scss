@@ -1,0 +1,17 @@
+.footer {
+  width: 100vw;
+  height: 6vh;
+  background-color: $dark-blue;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-top: 0;
+  padding-bottom: 0;
+  p {
+    font-family: $headers-font;
+    font-size: 1em;
+    color: white;
+  }
+}
