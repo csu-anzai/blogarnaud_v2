@@ -20,14 +20,18 @@ gem 'uglifier'
 gem 'webpacker'
 
 group :development do
+  # gems from le wagon minimal template
   gem 'web-console', '>= 3.3.0'
 end
 
 group :development, :test do
+  #gem from the le wagon minimal template
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
+  # gems added
+  gem 'faker'
 end
