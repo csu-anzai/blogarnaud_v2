@@ -1,28 +1,28 @@
 .card-article-show-title {
   margin: 0;
-  padding: 1em;
+  padding: 1rem;
   h1 {
     font-family: $headers-font;
-    font-size: 2em;
+    font-size: 2rem;
     color: $dark-blue;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
   }
   p {
     font-family: $body-font;
-    font-size: 1em;
+    font-size: 1rem;
     color: $dark-blue;
   }
   img {
     width: 100%;
     height: auto;
     border-radius: .5%;
-    box-shadow: 0em .25em .5em 0em rgba(23, 23, 23, 0.2);
+    box-shadow: 0rem .25rem .5rem 0rem rgba(23, 23, 23, 0.2);
   }
   .card-article-show-title-tag {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 2em;
+    align-items: flex-end;
+    margin-bottom: 2rem;
     img {
       width: 3vw;
       height: 3vw;
@@ -31,18 +31,19 @@
     }
     h2 {
       font-family: $headers-font;
-      font-size: 1.3em;
+      font-size: 1.3rem;
       color: $medium-blue;
+      margin-left: 1rem;
     }
   }
 }
 
 .card-article-show-content {
-  margin-top: 2em;
-  padding: 1em;
+  margin-top: 2rem;
+  padding: 1rem;
   .trix-content {
   font-family: $body-font;
-  font-size: 1em;
+  font-size: 1rem;
   color: $dark-blue;
   }
 }
@@ -50,24 +51,24 @@
 .card-article-show-share {
   width: 100%;
   height: auto;
-  margin-top: 2em;
+  margin-top: 2rem;
   background-color: $light-grey;
   border-radius: 1%;
-  padding: 2em;
+  padding: 2rem;
   h2 {
     font-family: $headers-font;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     color: $dark-blue;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
   .card-article-show-share-medias {
     display: flex;
     justify-content: space-around;
     align-items: center;
     i {
-      font-size: 4em;
+      font-size: 4rem;
       color: $dark-blue;
-      margin-right: 2em;
+      margin-right: 2rem;
       &:hover {
         color: $medium-blue;
       }
@@ -79,7 +80,7 @@
 }
 
 .card-article-show-readmore {
-  margin-top: 2em;
+  margin-top: 2rem;
 }
 
 

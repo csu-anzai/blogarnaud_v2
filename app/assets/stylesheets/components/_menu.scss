@@ -1,0 +1,35 @@
+.top-menu {
+  width: 100vw;
+  height: 14vh;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  background-color: $light-grey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 7vh;
+  padding-bottom: 1vh;
+  .top-menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 3vw;
+    a {
+      text-decoration: none;
+      font-size: .8rem;
+      color: $dark-blue;
+      img {
+        width: 4vh;
+        height: 4vh;
+      }
+    }
+  }
+}
+
+.top-menu-spacer {
+  margin-top: 15vh;
+}
