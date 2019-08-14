@@ -74,20 +74,35 @@
   }
 }
 
-
-// .top-menu-item {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: center;
-//     margin-right: 3vw;
-//     a {
-//       text-decoration: none;
-//       font-size: .8rem;
-//       color: $dark-blue;
-//       img {
-//         width: 4vh;
-//         height: 4vh;
-//       }
-//     }
-//   }
+.card-profile-experience {
+  padding-bottom: 4rem;
+  border-bottom: solid 1px $light-grey;
+  .card-profile-experience-job {
+    .card-profile-experience-job-title {
+      padding-top: 2rem;
+      padding-left: 2rem;
+      font-family: $headers-font;
+      font-size: 1.3rem;
+      color: $dark-blue;
+    }
+    .card-profile-experience-job-company-date {
+      padding-left: 2rem;
+      padding-bottom: 1rem;
+      font-family: $headers-font;
+      font-size: 1rem;
+      color: $dark-blue;
+    }
+    .card-profile-experience-job-miscinfo {
+      padding-left: 6rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-family: $body-font;
+      font-size: 1rem;
+      color: $dark-blue;
+      .card-profile-experience-job-miecinfo-item-text {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
