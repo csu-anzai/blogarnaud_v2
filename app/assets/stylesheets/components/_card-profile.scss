@@ -1,0 +1,32 @@
+.card-profile-summary {
+  .card-profile-summary-header {
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 30vw;
+      height: auto;
+      border-radius: 1%;
+      box-shadow: 0rem .25rem .5rem 0rem rgba(23, 23, 23, 0.2);
+    }
+    .card-profile-summary-header-title {
+      font-family: $headers-font;
+      font-size: 1.6rem;
+      color: $dark-blue;
+      padding-right: 4rem;
+      padding-left: 4rem;
+    }
+  }
+  .card-profile-summary-body {
+    padding-top: 2em;
+    .card-profile-summary-body-text {
+      font-family: $body-font;
+      font-size: 1.2rem;
+      color: $dark-blue;
+      padding-bottom: 1em;
+    }
+  }
+
+}
+
