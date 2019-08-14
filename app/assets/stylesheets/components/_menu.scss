@@ -1,0 +1,19 @@
+.top-menu {
+  width: 100vw;
+  height: 14vh;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  background-color: $light-grey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: .5em;
+  padding-left: .5em;
+  padding-top: 7vh;
+  padding-bottom: 0;
+}
+
+.top-menu-spacer {
+  margin-top: 15vh;
+}

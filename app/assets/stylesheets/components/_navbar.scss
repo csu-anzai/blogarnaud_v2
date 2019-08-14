@@ -8,8 +8,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-right: .5em;
-  padding-left: .5em;
+  padding-right: .5rem;
+  padding-left: .5rem;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -18,7 +18,7 @@
   width: 5vw;
   height: 6vh;
   font-family: $logo-font;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: light;
   color: white;
   display: flex;
@@ -37,13 +37,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 2rem;
+  padding-right: 2rem;
   .navbar-item {
     margin-right: 3vw;
     img {
-      width: 2em;
-      height: 2em;
+      width: 1.8vw;
+      height: 1.8vw;
     }
   }
 }
@@ -53,16 +53,16 @@
   height: 6vh;
   position: fixed;
   right: 0;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 2rem;
+  padding-left: 2rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   .navbar-right-search {
     margin-left: 3vw;
     img {
-      width: 2em;
-      height: 2em;
+      width: 1.8vw;
+      height: 1.8vw;
     }
   }
   .navbar-right-language {
@@ -72,7 +72,7 @@
     justify-content: space-around;
     align-items: flex-start;
     font-family: $headers-font;
-    font-size: 1em;
+    font-size: 1rem;
     color: white;
   }
 }
