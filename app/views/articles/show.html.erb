@@ -8,7 +8,7 @@
 <main class="container-main">
 
   <!-- create card for article title -->
-  <section class="card-article-show-title">
+  <section class="card-article-show-title" id="show-article-title">
     <section class="card-article-show-title-tag">
       <!-- variable to store path to tag icon -->
       <% path = @article.tag.icon %>
@@ -23,12 +23,12 @@
   </section>
 
   <!-- create card for article content -->
-  <section class="card-article-show-content">
+  <section class="card-article-show-content" id="show-article-content">
     <%= @article.content_fr %>
   </section>
 
   <!-- create card for article share -->
-  <section class="card-article-show-share">
+  <section class="card-article-show-share" id="show-article-share">
     <h2>Partagez cet article !</h3>
     <section class="card-article-show-share-medias">
       <!-- linkedin -->
@@ -55,7 +55,7 @@
   </section>
 
   <!-- create card for article read more -->
-  <section class="card-article-show-readmore">
+  <section class="card-article-show-readmore" id="show-article-readmore">
     <h2>Lire aussi :</h2>
     <p>A faire une fois Search terminée</p>
   </section>
