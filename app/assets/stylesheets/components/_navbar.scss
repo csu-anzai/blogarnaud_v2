@@ -18,8 +18,8 @@
   width: 5vw;
   height: 6vh;
   font-family: $logo-font;
-  font-size: 2rem;
-  font-weight: light;
+  font-size: 1.6rem;
+  font-weight: lighter;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -71,9 +71,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    font-family: $headers-font;
-    font-size: 1rem;
-    color: white;
+    a {
+      font-family: $headers-font;
+      font-size: .8rem;
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 
