@@ -4,31 +4,33 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-right: 1em;
-  padding-left: 1em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  flex-wrap: wrap;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin: 0;
   border-bottom: solid 1px $light-grey;
   img {
-    width: 20em;
-    height: 15em;
+    width: 20%;
+    height: auto;
     border-radius: 1%;
-    box-shadow: 0em .25em .5em 0em rgba(23, 23, 23, 0.2);
+    box-shadow: 0rem .25rem .5rem 0rem rgba(23, 23, 23, 0.2);
   }
   .card-article-index-summary {
-    padding-right: 1em;
-    padding-left: 1em;
+    width: 70%;
+    padding-right: 1rem;
+    padding-left: 1rem;
     h2 {
       font-family: $headers-font;
-      font-size: 1.3em;
+      font-size: 1.3rem;
       color: $dark-blue;
     }
     p {
       font-family: $body-font;
-      font-size: 1em;
+      font-size: 1rem;
       color: $dark-blue;
-      margin-top: 1.3em;
+      margin-top: 1.3rem;
     }
   }
 }

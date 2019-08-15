@@ -27,8 +27,7 @@
 
 .carousel-banner {
   position: fixed;
-  top: 0;
-  margin-top: 30vh;
+  bottom: 0;
   margin-bottom: 10vh;
   margin-left: 30vw;
   margin-right: 10vw;
@@ -41,19 +40,19 @@
   justify-content: flex-start;
   align-items: flex-start;
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
     color: white;
     text-shadow: 1px 1px 2px black;
   }
   p {
     margin-top: 2vh;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     color: white;
     text-shadow: 1px 1px 2px black;
   }
   a {
     margin-top: 2vh;
-    font-size: 1em;
+    font-size: 1rem;
     color: white;
     text-shadow: 1px 1px 2px black;
     text-decoration: none;
