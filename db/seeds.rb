@@ -99,8 +99,8 @@ article_02 = Article.create(title: "Les animaux blablablablablablablabla blablab
                             tag_id: animal_care.id)
 
 puts "---creating article (3/16) on education"
-article_03 = Article.create(title: "01/07/2018",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+article_03 = Article.create(title: "L'éducation' blablablablablablablabla blablablablablablablabla",
+                            date: "01/07/2018",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278796/ixjmcb8pfufylr5sau8s.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
