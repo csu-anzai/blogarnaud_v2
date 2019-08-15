@@ -84,7 +84,7 @@ puts "SEEDING DB WITH SOME TEST ARTICLES"
 
 puts "---creating article (1/16) on water"
 article_01 = Article.create(title: "L'eau blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "01/08/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278932/dvfo4lqyjh5f0yppdeh1.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -92,14 +92,14 @@ article_01 = Article.create(title: "L'eau blablablablablablablabla blablablablab
 
 puts "---creating article (2/16) on animal care"
 article_02 = Article.create(title: "Les animaux blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "13/08/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278871/rmb3qlrnfyqg6np1ssis.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
                             tag_id: animal_care.id)
 
 puts "---creating article (3/16) on education"
-article_03 = Article.create(title: "L'éducation blablablablablablablabla blablablablablablablabla",
+article_03 = Article.create(title: "01/07/2018",
                             date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278796/ixjmcb8pfufylr5sau8s.jpg",
                             content_fr: lorem_ipsum,
@@ -108,7 +108,7 @@ article_03 = Article.create(title: "L'éducation blablablablablablablabla blabla
 
 puts "---creating article (4/16) on animal care"
 article_04 = Article.create(title: "Les vaches blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "14/06/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278713/my3f3sqc7e26bh82rlsh.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -116,7 +116,7 @@ article_04 = Article.create(title: "Les vaches blablablablablablablabla blablabl
 
 puts "---creating article (5/16) on culture"
 article_05 = Article.create(title: "La musique blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "18/07/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278647/dcq3yvvuhbyfboh2nked.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -124,7 +124,7 @@ article_05 = Article.create(title: "La musique blablablablablablablabla blablabl
 
 puts "---creating article (6/16) on equality"
 article_06 = Article.create(title: "L'égalité blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "12/02/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278521/pjxc67lmcooupg2inaxv.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -132,7 +132,7 @@ article_06 = Article.create(title: "L'égalité blablablablablablablabla blablab
 
 puts "---creating article (7/16) on agriculture"
 article_07 = Article.create(title: "Notre terre nourricière est en danger d'extinction",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "18/10/2018",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278455/rbquioassuyolrgnv5zx.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -140,7 +140,7 @@ article_07 = Article.create(title: "Notre terre nourricière est en danger d'ext
 
 puts "---creating article (8/16) on forests"
 article_08 = Article.create(title: "Les forêts blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "08/02/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278364/gj3w3r1huse1ffpt2lr1.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -148,7 +148,7 @@ article_08 = Article.create(title: "Les forêts blablablablablablablabla blablab
 
 puts "---creating article (9/16) on mindfulness"
 article_09 = Article.create(title: "La pleine conscience blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "07/04/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278292/tl9p3c3cyvzsybyv7pl6.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -156,7 +156,7 @@ article_09 = Article.create(title: "La pleine conscience blablablablablablablabl
 
 puts "---creating article (10/16) on recycling"
 article_10 = Article.create(title: "Le recyclage blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "23/10/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278144/w4tgros2pfk9jaduiyiq.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -164,7 +164,7 @@ article_10 = Article.create(title: "Le recyclage blablablablablablablabla blabla
 
 puts "---creating article (11/16) on energy"
 article_11 = Article.create(title: "La transition énergétique blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "16/07/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278071/ia2ss3vijrf4umpda1hr.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -172,7 +172,7 @@ article_11 = Article.create(title: "La transition énergétique blablablablablab
 
 puts "---creating article (12/16) on aging"
 article_12 = Article.create(title: "Les personnes agées blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "29/11/2017",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277998/naoiebztrhsiu6x5letf.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -180,7 +180,7 @@ article_12 = Article.create(title: "Les personnes agées blablablablablablablabl
 
 puts "---creating article (13/16) on agriculture"
 article_13 = Article.create(title: "Le maïs blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "18/11/2018",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277928/yf99ttybnvq26xuuqehe.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -188,7 +188,7 @@ article_13 = Article.create(title: "Le maïs blablablablablablablabla blablablab
 
 puts "---creating article (14/16) on in-home servicing"
 article_14 = Article.create(title: "Les services à la personne blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "05/03/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277806/hufkcvzsfbtkcakl7jwr.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -196,7 +196,7 @@ article_14 = Article.create(title: "Les services à la personne blablablablablab
 
 puts "---creating article (15/16) on ecology"
 article_15 = Article.create(title: "Les bouteilles en plastique blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "31/07/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277717/jrjxewuhojz3oodujfuw.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
@@ -204,7 +204,7 @@ article_15 = Article.create(title: "Les bouteilles en plastique blablablablablab
 
 puts "---creating article (16/16) on short channels"
 article_16 = Article.create(title: "Les circuits courts blablablablablablablabla blablablablablablablabla",
-                            date: Faker::Date.between(from: 500.days.ago, to: 3.days.ago),
+                            date: "15/01/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277561/delwzuub2vgt9g90jfpz.jpg",
                             content_fr: lorem_ipsum,
                             content_en: lorem_ipsum,
