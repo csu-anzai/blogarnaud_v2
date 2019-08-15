@@ -31,7 +31,8 @@
   margin-bottom: 10vh;
   margin-left: 30vw;
   margin-right: 10vw;
-  max-height: 70vh;
+  max-height: 70vh !important;
+  overflow: auto;
   width: auto;
   z-index: 500;
   padding: 0;
