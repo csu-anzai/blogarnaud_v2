@@ -6,6 +6,7 @@
     font-size: 2rem;
     color: $dark-blue;
     margin-bottom: 2rem;
+    margin-right: 1rem;
   }
   p {
     font-family: $body-font;
@@ -33,7 +34,8 @@
       font-family: $headers-font;
       font-size: 1.3rem;
       color: $medium-blue;
-      margin-left: 1rem;
+      padding-left: 1rem;
+      margin: 0;
     }
   }
 }
