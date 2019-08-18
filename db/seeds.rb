@@ -219,6 +219,7 @@ the_green_group = Entreprise.create(name: "TheGreenGroup",
                                     content_fr: lorem_ipsum,
                                     photo: "img_entreprise_thegreengroup.jpg",
                                     logo: "logo_thegreengroup.png",
+                                    website: "http://www.google.com",
                                     tag_id: ecology.id)
 
 puts "---creating entreprise (2/4) together.io"
@@ -227,6 +228,7 @@ together = Entreprise.create(name: "together.io",
                              content_fr: lorem_ipsum,
                              photo: "img_entreprise_together.jpg",
                              logo: "logo_together.png",
+                             website: "http://www.google.com",
                              tag_id: ecology.id)
 
 puts "---creating entreprise (3/4) fund a better place"
@@ -235,6 +237,7 @@ fabp = Entreprise.create(name: "Fund a Better Place",
                          content_fr: lorem_ipsum,
                          photo: "img_entreprise_fundabetterplace.jpg",
                          logo: "logo_fundabetterplace.png",
+                         website: "http://www.google.com",
                          tag_id: ecology.id)
 
 puts "---creating entreprise (4/4) maanaz"
@@ -243,6 +246,7 @@ maanaz = Entreprise.create(name: "Maanaz",
                            content_fr: lorem_ipsum,
                            photo: "img_entreprise_maanaz.jpg",
                            logo: "logo_maanaz.png",
+                           website: "http://www.google.com",
                            tag_id: education.id)
 
 # ------- seed db with readers -------
