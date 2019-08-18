@@ -210,6 +210,41 @@ article_16 = Article.create(title: "Les circuits courts blablablablablablablabla
                             content_en: lorem_ipsum,
                             tag_id: short_channels.id)
 
+# ------- seed db with entreprises -------
+puts "SEEDING DB WITH ENTREPRISES"
+
+puts "---creating entreprise (1/4) the green group"
+the_green_group = Entreprise.create(name: "TheGreenGroup",
+                                    value_proposition_fr: "Une value proposition de ouf qui va venir bientôt",
+                                    content_fr: lorem_ipsum,
+                                    photo: "img_entreprise_thegreengroup.jpg",
+                                    logo: "logo_thegreengroup.png",
+                                    tag_id: ecology.id)
+
+puts "---creating entreprise (2/4) together.io"
+together = Entreprise.create(name: "together.io",
+                             value_proposition_fr: "Une value proposition de ouf qui va venir bientôt",
+                             content_fr: lorem_ipsum,
+                             photo: "img_entreprise_together.jpg",
+                             logo: "logo_together.png",
+                             tag_id: ecology.id)
+
+puts "---creating entreprise (3/4) fund a better place"
+fabp = Entreprise.create(name: "Fund a Better Place",
+                         value_proposition_fr: "Une value proposition de ouf qui va venir bientôt",
+                         content_fr: lorem_ipsum,
+                         photo: "img_entreprise_fundabetterplace.jpg",
+                         logo: "logo_fundabetterplace.png",
+                         tag_id: ecology.id)
+
+puts "---creating entreprise (4/4) maanaz"
+maanaz = Entreprise.create(name: "Maanaz",
+                           value_proposition_fr: "Une value proposition de ouf qui va venir bientôt",
+                           content_fr: lorem_ipsum,
+                           photo: "img_entreprise_maanaz.jpg",
+                           logo: "logo_maanaz.png",
+                           tag_id: education.id)
+
 # ------- seed db with readers -------
 puts "SEEDING DB WITH SOME READERS"
 
