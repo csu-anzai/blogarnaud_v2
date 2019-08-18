@@ -6,6 +6,7 @@ class Entreprise < ApplicationRecord
   validates :content_fr, presence: true
   validates :photo, presence: true
   validates :logo, presence: true
+  validates :website, presence: true
 
   has_rich_text :value_proposition_fr
   has_rich_text :value_proposition_en

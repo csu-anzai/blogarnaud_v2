@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   resources :entreprises
   # crud routes for readers
   resources :readers
+  # route for positive impact page
+  get "/positive-impact", to: 'pages#positive-impact', as: "positiveimpact"
   # route for profile
   get "/profile", to: 'pages#profile', as: "profile"
    # route for contact

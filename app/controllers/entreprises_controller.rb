@@ -40,7 +40,7 @@ class EntreprisesController < ApplicationController
   private
 
   def set_entreprise
-    @entreprise = Entreprise.finc(params[:id])
+    @entreprise = Entreprise.find(params[:id])
   end
 
   def entreprise_params

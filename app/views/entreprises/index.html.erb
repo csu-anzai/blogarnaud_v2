@@ -1,2 +1,52 @@
-<h1>Entreprises#index</h1>
-<p>Find me in app/views/entreprises/index.html.erb</p>
+<!-- add spacer for navbar -->
+<!-- <div class="navbar-spacer"></div> -->
+
+<!-- create card banner-like for the positive impact project -->
+<figure class="card-entreprise-index-positive-impact-project">
+  <!-- positive impac title -->
+  <section class="card-entreprise-index-positive-impact-project-title">
+    Définissons un "Positive Impact Project" !
+  </section>
+  <!-- positive impact caption -->
+  <section class="card-entreprise-index-positive-impact-project-caption">
+    Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat. Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat
+    <%= link_to " -> Lire", positiveimpact_path %>
+  </section>
+  <!-- positive impact link to landing page -->
+  <button class="button-positive-impact">
+    <a href="http://www.google.com" target="_blank">En savoir plus</a>
+  </button>
+</figure>
+
+<!-- main section to display all entreprises cards -->
+<main class="container-main">
+  <!-- iterate through all entreprises and create a card for each of them -->
+  <% @entreprises.each do |entreprise| %>
+    <!-- create a card for each entreprise -->
+    <figure class="card-entreprise-index">
+      <!--  entreprise photo -->
+      <%= image_tag(entreprise.photo) %>
+      <!-- entreprise presentation -->
+      <figcaption class="card-entreprise-index-presentation">
+        <!-- entreprise logo -->
+          <%= image_tag(entreprise.logo) %>
+        <!-- value proposition -->
+        <div class="card-entreprise-index-presentation-value-proposition">
+          <%= entreprise.value_proposition_fr %>
+        </div>
+        <!-- entreprise content -->
+        <div class="card-entreprise-index-presentation-content">
+          <%= truncate(strip_tags(entreprise.content_fr.to_s), length: 600) %>
+          <%= link_to "  -> Lire", entreprise_path(entreprise) %>
+        </div>
+        <!-- entreprise link to landing page -->
+        <button class="button-entreprise">
+          <a href="<%= entreprise.website %>" target="_blank">En savoir plus</a>
+        </button>
+      </figcaption>
+    </figure>
+  <% end %>
+</main>
+
+<!-- footer -->
+<%= render 'shared/footer' %>
