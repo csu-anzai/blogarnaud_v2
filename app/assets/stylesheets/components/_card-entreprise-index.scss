@@ -1,0 +1,41 @@
+.card-entreprise-index-positive-impact-project {
+  width: 100vw;
+  height: 35vh;
+  margin-top: 6vh;
+  background-image: asset-url('img_positiveimpact.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .card-entreprise-index-positive-impact-project-title {
+    padding-left: 20rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: $headers-font;
+    font-size: 2rem;
+    color: white;
+    text-shadow: .1rem .1rem .2rem black;
+  }
+  .card-entreprise-index-positive-impact-project-caption {
+    padding-left: 20rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    font-family: $body-font;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: .1rem .1rem .2rem black;
+    max-height: 15vh;
+    overflow: auto;
+    a {
+      color: $light-grey;
+      text-shadow: inherit;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
