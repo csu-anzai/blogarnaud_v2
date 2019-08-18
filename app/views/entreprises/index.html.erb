@@ -13,13 +13,39 @@
     <%= link_to " -> Lire", positiveimpact_path %>
   </section>
   <!-- positive impact link to landing page -->
-  <button class="button-entreprise">
+  <button class="button-positive-impact">
     <a href="http://www.google.com" target="_blank">En savoir plus</a>
   </button>
 </figure>
 
 <!-- main section to display all entreprises cards -->
 <main class="container-main">
+  <!-- iterate through all entreprises and create a card for each of them -->
+  <% @entreprises.each do |entreprise| %>
+    <!-- create a card for each entreprise -->
+    <figure class="card-entreprise-index">
+      <!--  entreprise photo -->
+      <%= image_tag(entreprise.photo) %>
+      <!-- entreprise presentation -->
+      <figcaption class="card-entreprise-index-presentation">
+        <!-- entreprise logo -->
+          <%= image_tag(entreprise.logo) %>
+        <!-- value proposition -->
+        <div class="card-entreprise-index-presentation-value-proposition">
+          <%= entreprise.value_proposition_fr %>
+        </div>
+        <!-- entreprise content -->
+        <div class="card-entreprise-index-presentation-content">
+          <%= truncate(strip_tags(entreprise.content_fr.to_s), length: 600) %>
+          <%= link_to "  -> Lire", entreprise_path(entreprise) %>
+        </div>
+        <!-- entreprise link to landing page -->
+        <button class="button-entreprise">
+          <a href="<%= entreprise.website %>" target="_blank">En savoir plus</a>
+        </button>
+      </figcaption>
+    </figure>
+  <% end %>
 </main>
 
 <!-- footer -->

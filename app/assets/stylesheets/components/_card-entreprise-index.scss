@@ -39,3 +39,48 @@
     }
   }
 }
+
+.card-entreprise-index {
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 0;
+  border-bottom: solid 1px $light-grey;
+  margin-top: 3rem;
+  img {
+    width: 20%;
+    height: auto;
+    border-radius: 1%;
+    box-shadow: 0rem .25rem .5rem 0rem rgba(23, 23, 23, 0.2);
+  }
+  .card-entreprise-index-presentation {
+    width: 70%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    img {
+      max-width: 40%;
+      height: auto;
+    }
+    .card-entreprise-index-presentation-value-proposition {
+      font-family: $headers-font;
+      font-size: 1.6rem;
+      color: $dark-blue;
+      margin-top: 1.3rem;
+      // $$$$$$$$$$$$$$$$$$$$$$$$$$$$ see if responsive or not, otherwise change into h2 and see same trick for other bugs in display
+    }
+    .card-entreprise-index-presentation-content {
+      font-family: $body-font;
+      font-size: 1rem;
+      color: $dark-blue;
+      margin-top: 1.3rem;
+    }
+  }
+}
