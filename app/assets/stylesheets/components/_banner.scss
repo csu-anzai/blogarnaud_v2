@@ -1,0 +1,42 @@
+.banner {
+  width: 100vw;
+  min-height: 50vh;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  .banner-title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: $headers-font;
+    font-size: 1.6rem;
+    color: white;
+    text-shadow: .1rem .1rem .2rem black;
+  }
+  .banner-caption {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding: 1rem;
+    font-family: $body-font;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: .1rem .1rem .2rem black;
+    max-height: 15vh;
+    overflow: auto;
+    a {
+      color: $light-grey;
+      text-shadow: inherit;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

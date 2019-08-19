@@ -1,45 +1,3 @@
-.card-entreprise-index-positive-impact-project {
-  width: 100vw;
-  height: 35vh;
-  margin-top: 6vh;
-  background-image: asset-url('img_positiveimpact.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  .card-entreprise-index-positive-impact-project-title {
-    padding-left: 20rem;
-    padding-right: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-    font-family: $headers-font;
-    font-size: 2rem;
-    color: white;
-    text-shadow: .1rem .1rem .2rem black;
-  }
-  .card-entreprise-index-positive-impact-project-caption {
-    padding-left: 20rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
-    font-family: $body-font;
-    font-size: 1.2rem;
-    color: white;
-    text-shadow: .1rem .1rem .2rem black;
-    max-height: 15vh;
-    overflow: auto;
-    a {
-      color: $light-grey;
-      text-shadow: inherit;
-      text-decoration: none;
-      &:hover {
-        color: white;
-      }
-    }
-  }
-}
-
 .card-entreprise-index {
   width: 100%;
   min-height: 30vh;
@@ -53,6 +11,7 @@
   margin-top: 3rem;
   img {
     width: 20%;
+    min-width: 100px;
     height: auto;
     border-radius: 1%;
     box-shadow: 0rem .25rem .5rem 0rem rgba(23, 23, 23, 0.2);
@@ -60,27 +19,46 @@
   .card-entreprise-index-presentation {
     width: 70%;
     padding-right: 1rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    img {
-      max-width: 40%;
-      height: auto;
-    }
-    .card-entreprise-index-presentation-value-proposition {
+    h1 {
       font-family: $headers-font;
       font-size: 1.6rem;
       color: $dark-blue;
-      margin-top: 1.3rem;
+    }
+    h2 {
+      font-family: $headers-font;
+      font-size: 1.2rem;
+      color: $dark-blue;
+      margin-top: 1.2rem;
       // $$$$$$$$$$$$$$$$$$$$$$$$$$$$ see if responsive or not, otherwise change into h2 and see same trick for other bugs in display
     }
-    .card-entreprise-index-presentation-content {
+    p {
       font-family: $body-font;
       font-size: 1rem;
       color: $dark-blue;
-      margin-top: 1.3rem;
+      margin-top: 1.2rem;
+      a {
+        font-family: inherit;
+        font-size: inherit;
+        text-decoration: none;
+        color: $light-grey;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $medium-blue;
+      font-family: $headers-font;
+      font-size: 1.2rem;
+      &:hover {
+        color: $dark-blue;
+      }
     }
   }
 }
