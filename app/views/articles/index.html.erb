@@ -16,7 +16,7 @@
           <%= article.tag.name %>
         </div>
         <!-- title and truncated content -->
-        <h2><%= article.title %></h2>
+        <h2><%= article.title_fr %></h2>
         <p><%= truncate(strip_tags(article.content_fr.to_s), length: 600) %></p>
         <!-- link to article -->
         <%= link_to "Lire ->", article_path(article) %>
