@@ -58,25 +58,32 @@
   <section class="card-article-show-readmore" id="show-article-readmore">
     <h2>Lire aussi :</h2>
 
-    <% @readmore.each do |result| %>
-      <!-- create a card for the article -->
-      <figure class="card-article-index">
-        <!-- article image -->
-        <%= cl_image_tag result.photo, height: 300, width: 400, crop: :fill %>
-        <!-- article presentation -->
-        <figcaption class="card-article-index-summary">
-          <!-- header for date and tag -->
-          <div class="card-article-index-header">
-            <%= result.date %> |
-            <%= result.tag.name %>
-          </div>
-          <!-- title and truncated content -->
-          <h2><%= result.title_fr %></h2>
-          <p><%= truncate(strip_tags(result.content_fr.to_s), length: 600) %></p>
-          <!-- link to article -->
-          <%= link_to "Lire ->", article_path(result) %>
-        </figcaption>
-      </figure>
+    <!-- check if @readmore has results or not -->
+    <% if @readmore == [] || @readmore.count == 1 %>
+      <p>Désolé, il n'y a pas d'autres articles sur le thème "<%= @article.tag.name %>" pour le moment</p>
+   <!--  otherwise, iterate through results -->
+    <% else %>
+      <% @readmore.each do |result| %>
+        <!-- check if article is the same as the one being read and skip if true -->
+        <% unless result.title_fr == @article.title_fr %>
+          <figure class="card-article-index">
+            <%= cl_image_tag result.photo, height: 300, width: 400, crop: :fill %>
+            <!-- article presentation -->
+            <figcaption class="card-article-index-summary">
+              <!-- header for date and tag -->
+              <div class="card-article-index-header">
+                <%= result.date %> |
+                <%= result.tag.name %>
+              </div>
+              <!-- title and truncated content -->
+              <h2><%= result.title_fr %></h2>
+              <p><%= truncate(strip_tags(result.content_fr.to_s), length: 600) %></p>
+              <!-- link to article -->
+              <%= link_to "Lire ->", article_path(result) %>
+            </figcaption>
+          </figure>
+        <% end %>
+      <% end %>
     <% end %>
   </section>
 
