@@ -4,6 +4,9 @@ puts "DESTROYING ALL EXISTING ENTRIES FROM DB"
 puts "---destroying all existing articles"
 Article.destroy_all
 
+puts "---destroying all existing entreprises"
+Entreprise.destroy_all
+
 puts "---destroying all existing tags"
 Tag.destroy_all
 
