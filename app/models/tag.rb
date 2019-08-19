@@ -4,4 +4,7 @@ class Tag < ApplicationRecord
 
   validates :name, presence: true
   validates :icon, presence: true
+
+  include PgSearch::Model
+  multisearchable against: [:name]
 end

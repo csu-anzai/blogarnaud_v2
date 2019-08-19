@@ -10,4 +10,15 @@ class Article < ApplicationRecord
 
   has_rich_text :content_fr
   has_rich_text :content_en
+
+  include PgSearch::Model
+  pg_search_scope :global_search,
+                  against: [:title_fr, :title_en, :content_fr, :content_en],
+                  associated_against: {
+                    tag: [:name]
+                  },
+                  using: {
+                    tsearch: { prefix: true }
+                  }
+  multisearchable against: [:title_fr, :title_en, :content_fr, :content_en]
 end
