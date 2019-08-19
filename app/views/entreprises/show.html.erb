@@ -5,7 +5,7 @@
 <div class="top-menu-banner-spacer"></div>
 
 <!-- create entreprise banner -->
-<figure class="banner" style="background-image: url('<%= image_path @entreprise.photo %>')">
+<figure class="banner" style="background-image: url('<%= image_path @entreprise.photo %>')" id="show-entreprise-intro">
   <div class="container-main">
     <!-- positive impac title -->
     <section class="banner-title">
@@ -21,3 +21,50 @@
     </button>
   </div>
 </figure>
+
+<!-- company presentation -->
+<main class="container-main">
+
+  <!-- create card for company content -->
+  <section class="card-article-show-content" id="show-entreprise-content">
+    <%= @entreprise.content_fr %>
+  </section>
+
+  <!-- create card for article share -->
+  <section class="card-article-show-share" id="show-article-share">
+    <h2>Parlez-en autour de vous !</h2>
+    <section class="card-article-show-share-medias">
+      <!-- linkedin -->
+      <%= link_to "#" do %>
+        <i class="fab fa-linkedin"></i>
+      <% end %>
+      <!-- viadeo -->
+      <%= link_to "#" do %>
+        <i class="fab fa-viadeo-square"></i>
+      <% end %>
+      <!-- twitter -->
+      <%= link_to "#" do %>
+        <i class="fab fa-twitter-square"></i>
+      <% end %>
+      <!-- facebook -->
+      <%= link_to "#" do %>
+        <i class="fab fa-facebook-square"></i>
+      <% end %>
+       <!-- email -->
+      <%= link_to "#" do %>
+        <i class="fas fa-paper-plane"></i>
+      <% end %>
+    </section>
+  </section>
+
+  <!-- create card for entreprise factsheet -->
+  <section class="card-article-show-readmore" id="show-article-readmore">
+    <h2>Factsheet :</h2>
+    <p>Réfléchir à ce que je veux mettre dedans</p>
+     <%= image_tag(@entreprise.logo) %>
+  </section>
+
+</main>
+
+<!-- top footer -->
+<%= render 'shared/footer' %>
