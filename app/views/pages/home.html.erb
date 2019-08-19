@@ -34,7 +34,7 @@
             <%= cl_image_tag article.photo, class: "d-block w-100 carousel-image" %>
           </div>
           <div class="carousel-banner">
-            <h1><%= article.title %></h1>
+            <h1><%= article.title_fr %></h1>
             <p><%= truncate(strip_tags(article.content_fr.to_s), length: 450) %></p>
             <%= link_to "Lire ->", article_path(article) %>
           </div>
