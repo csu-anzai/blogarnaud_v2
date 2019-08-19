@@ -11,6 +11,7 @@
   margin-top: 3rem;
   img {
     width: 20%;
+    min-width: 100px;
     height: auto;
     border-radius: 1%;
     box-shadow: 0rem .25rem .5rem 0rem rgba(23, 23, 23, 0.2);
@@ -18,27 +19,46 @@
   .card-entreprise-index-presentation {
     width: 70%;
     padding-right: 1rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    img {
-      max-width: 40%;
-      height: auto;
-    }
-    .card-entreprise-index-presentation-value-proposition {
+    h1 {
       font-family: $headers-font;
       font-size: 1.6rem;
       color: $dark-blue;
-      margin-top: 1.3rem;
+    }
+    h2 {
+      font-family: $headers-font;
+      font-size: 1.2rem;
+      color: $dark-blue;
+      margin-top: 1.2rem;
       // $$$$$$$$$$$$$$$$$$$$$$$$$$$$ see if responsive or not, otherwise change into h2 and see same trick for other bugs in display
     }
-    .card-entreprise-index-presentation-content {
+    p {
       font-family: $body-font;
       font-size: 1rem;
       color: $dark-blue;
-      margin-top: 1.3rem;
+      margin-top: 1.2rem;
+      a {
+        font-family: inherit;
+        font-size: inherit;
+        text-decoration: none;
+        color: $light-grey;
+        &:hover {
+          color: $dark-blue;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $medium-blue;
+      font-family: $headers-font;
+      font-size: 1.2rem;
+      &:hover {
+        color: $dark-blue;
+      }
     }
   }
 }
