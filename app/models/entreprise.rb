@@ -12,4 +12,15 @@ class Entreprise < ApplicationRecord
   has_rich_text :value_proposition_en
   has_rich_text :content_fr
   has_rich_text :content_en
+
+  include PgSearch::Model
+  pg_search_scope :global_search,
+                  against: [:name, :value_proposition_fr, :value_proposition_en, :content_fr, :content_en, :website],
+                  associated_against: {
+                    tag: [:name]
+                  },
+                  using: {
+                    tsearch: { prefix: true }
+                  }
+  multisearchable against: [:name, :value_proposition_fr, :value_proposition_en, :content_fr, :content_en, :website]
 end
