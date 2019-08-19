@@ -1,8 +1,11 @@
 <!-- add spacer for navbar -->
 <div class="navbar-banner-spacer"></div>
 
+<!-- define variable for positive impact photo -->
+<% @impact = 'img_positiveimpact.jpg' %>
+
 <!-- create banner for the positive impact project -->
-<figure class="banner">
+<figure class="banner" style="background-image: url('<%= image_path @impact %>')">
   <div class="container-main">
     <!-- positive impac title -->
     <section class="banner-title">
