@@ -1,5 +1,10 @@
-<div class="navbar-spacer"></div>
+<!-- top menu -->
+<%= render 'menu-new-edit' %>
 
+<!-- add spacer for menu -->
+<div class="top-menu-spacer"></div>
+
+<!-- form to create an entreprise -->
 <main class="container-form">
   <h1>Admin | Créer une entreprise</h1>
   <%= render 'form', entreprise: @entreprise %>

@@ -2,7 +2,7 @@
 <%= simple_form_for(entreprise) do |f| %>
 
   <!-- metadata section -->
-  <h5><i class="fas fa-exclamation-circle"></i> Métadonnées de l'entreprise :</h5>
+  <h5 id="form-metadata"><i class="fas fa-exclamation-circle"></i> Métadonnées de l'entreprise :</h5>
   <%= f.input :name, :label => "Nom de l'entreprise" %>
   <%= f.input :tag_id, collection: Tag.all.order(name: :asc) %>
   <%= f.input :photo %>
@@ -10,14 +10,14 @@
   <%= f.input :website %>
 
   <!-- entreprise presentation in French -->
-  <h5><i class="fas fa-exclamation-circle"></i> Présentation de l'entreprise en Français :</h5>
+  <h5 id="form-french"><i class="fas fa-exclamation-circle"></i> Présentation de l'entreprise en Français :</h5>
   <h6>Proposition de valeur en Français *</h6>
   <%= f.rich_text_area :value_proposition_fr, :label => "Proposition de valeur en Français" %>
   <h6>Présentation en Français *</h6>
   <%= f.rich_text_area :content_fr, :label => "Présentation en Français" %>
 
   <!-- entreprise presentation in English -->
-  <h5><i class="fas fa-exclamation-circle"></i> Présentation de l'entreprise en Anglais :</h5>
+  <h5 id="form-english"><i class="fas fa-exclamation-circle"></i> Présentation de l'entreprise en Anglais :</h5>
   <h6>Proposition de valeur en Anglais</h6>
   <%= f.rich_text_area :value_proposition_en, :label => "Proposition de valeur en Anglais" %>
   <h6>Présentation en Anglais</h6>
