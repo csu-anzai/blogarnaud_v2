@@ -1,2 +1,11 @@
-<h1>Entreprises#new</h1>
-<p>Find me in app/views/entreprises/new.html.erb</p>
+<!-- top menu -->
+<%= render 'menu-new-edit' %>
+
+<!-- add spacer for menu -->
+<div class="top-menu-spacer"></div>
+
+<!-- form to create an entreprise -->
+<main class="container-form">
+  <h1>Admin | Créer une entreprise</h1>
+  <%= render 'form', entreprise: @entreprise %>
+</main>
