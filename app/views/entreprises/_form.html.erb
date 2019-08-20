@@ -11,12 +11,16 @@
 
   <!-- entreprise presentation in French -->
   <h5><i class="fas fa-exclamation-circle"></i> Présentation de l'entreprise en Français :</h5>
+  <h6>Proposition de valeur en Français *</h6>
   <%= f.rich_text_area :value_proposition_fr, :label => "Proposition de valeur en Français" %>
+  <h6>Présentation en Français *</h6>
   <%= f.rich_text_area :content_fr, :label => "Présentation en Français" %>
 
   <!-- entreprise presentation in English -->
   <h5><i class="fas fa-exclamation-circle"></i> Présentation de l'entreprise en Anglais :</h5>
+  <h6>Proposition de valeur en Anglais</h6>
   <%= f.rich_text_area :value_proposition_en, :label => "Proposition de valeur en Anglais" %>
+  <h6>Présentation en Anglais</h6>
   <%= f.rich_text_area :content_en, :label => "Présentation en Anglais" %>
 
   <!-- submit -->
