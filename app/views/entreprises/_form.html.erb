@@ -1,0 +1,24 @@
+<!-- form to create or edit an entreprise -->
+<%= simple_form_for(entreprise) do |f| %>
+
+  <!-- metadata section -->
+  <h5>Définir les métadonnées de l'entreprise :</h5>
+  <%= f.input :name, :label => "Nom de l'entreprise" %>
+  <%= f.input :tag_id, collection: Tag.all.order(name: :asc) %>
+  <%= f.input :photo %>
+  <%= f.input :logo %>
+  <%= f.input :website %>
+
+  <!-- entreprise presentation in French -->
+  <h5>Présentation de l'entreprise en Français :</h5>
+  <%= f.rich_text_area :value_proposition_fr, :label => "Proposition de valeur en Français" %>
+  <%= f.rich_text_area :content_fr, :label => "Présentation en Français" %>
+
+  <!-- entreprise presentation in English -->
+  <h5>Présentation de l'entreprise en Anglais :</h5>
+  <%= f.rich_text_area :value_proposition_en, :label => "Proposition de valeur en Anglais" %>
+  <%= f.rich_text_area :content_en, :label => "Présentation en Anglais" %>
+
+  <!-- submit -->
+  <%= f.submit "Enregistrer cette entreprise", class: "button-banner" %>
+<% end %>
