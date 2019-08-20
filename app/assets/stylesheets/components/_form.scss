@@ -1,19 +1,27 @@
-.simple_form input {
-  border-radius: 8px;
-}
-
-.simple_form label {
-  font-family: $headers-font;
-  color: $dark-blue;
-}
-
-.simple_form trix-editor {
-  display: block;
-  min-height: 250px;
-  background-color: white;
-  border-radius: 8px;
-  margin-top: 6px;
-  margin-bottom: 10px;
+.simple_form {
+  input {
+    border-radius: 2px;
+    margin-left: 2rem;
+  }
+  select {
+    border-radius: 2px;
+    margin-left: 2rem;
+  }
+  label {
+    font-family: $headers-font;
+    font-size: 1rem;
+    color: $dark-blue;
+    margin-left: 2rem;
+  }
+  trix-editor {
+    display: block;
+    min-height: 250px;
+    background-color: white;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-left: 2rem;
+  }
 }
 
 
@@ -37,6 +45,7 @@ trix-editor {
 
 trix-toolbar * {
   box-sizing: border-box;
+  margin-left: 1rem; // added to the opensource css for a better alignment
 }
 
 trix-toolbar .trix-button-row {

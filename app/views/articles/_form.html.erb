@@ -2,7 +2,7 @@
 <%= simple_form_for(article) do |f| %>
 
   <!-- metadata section -->
-  <h5>Définir les métadonnées de l'article :</h5>
+  <h5><i class="fas fa-exclamation-circle"></i> Définir les métadonnées de l'article :</h5>
   <%= f.input :title_fr, :label => "Titre en Français" %>
   <%= f.input :title_en, :label => "Titre en Anglais" %>
   <%= f.input :tag_id, collection: Tag.all.order(name: :asc) %>
@@ -11,7 +11,7 @@
   <%= f.input :photo_cache, as: :hidden %>
 
   <!-- article content section -->
-  <h5>Ecrire le contenu de l'article :</h5>
+  <h5> <i class="fas fa-exclamation-circle"></i> Ecrire le contenu de l'article :</h5>
   <%= f.rich_text_area :content_fr, :label => "Contenu en Français" %>
   <%= f.rich_text_area :content_en, :label => "Contenu en Anglais" %>
 
