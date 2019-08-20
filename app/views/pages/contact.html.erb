@@ -1,1 +1,24 @@
-contact.html.erb
+<!-- add spacer for navbar -->
+<div class="navbar-spacer"></div>
+
+<!-- form to create an article -->
+<main class="container-form">
+  <h1><i class="fas fa-feather"></i> Laissez-moi un message !</h1>
+  <%= simple_form_for(@reader) do |f| %>
+
+    <!-- personal details section -->
+    <h5><i class="fas fa-caret-right"></i> Laissez vos coordonnées :</h5>
+    <%= f.input :first_name, :label => "Prénom" %>
+    <%= f.input :last_name, :label => "Nom" %>
+    <%= f.input :email, :label => "Addresse email" %>
+
+    <!-- message section -->
+    <h5><i class="fas fa-caret-right"></i> Ecrivez votre message :</h5>
+    <%= f.rich_text_area :message, :label => "Votre message" %>
+
+    <!-- submit -->
+    <%= f.submit "Envoyer", class: "button-banner" %>
+
+   <% end %>
+
+</main>
