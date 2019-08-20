@@ -1,6 +1,11 @@
-<div class="navbar-spacer"></div>
+<!-- top menu -->
+<%= render 'menu-new-edit' %>
 
+<!-- add spacer for menu -->
+<div class="top-menu-spacer"></div>
+
+<!-- form to update an article -->
 <main class="container-form">
-  <h1>Admin | Créer un article</h1>
+   <h1><i class="fas fa-user-lock"></i> Créer un article</h1>
   <%= render 'form', article: @article %>
 </main>
