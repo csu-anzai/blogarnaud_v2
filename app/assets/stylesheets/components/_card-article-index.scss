@@ -21,6 +21,11 @@
     width: 70%;
     padding-right: 1rem;
     padding-left: 1rem;
+    .card-article-index-header {
+      font-family: $headers-font;
+      font-size: .8rem;
+      color: $dark-blue;
+    }
     h2 {
       font-family: $headers-font;
       font-size: 1.3rem;

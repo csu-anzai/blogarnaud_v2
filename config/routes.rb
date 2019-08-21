@@ -20,7 +20,9 @@ Rails.application.routes.draw do
   get "/positive-impact", to: 'pages#positive-impact', as: "positiveimpact"
   # route for profile
   get "/profile", to: 'pages#profile', as: "profile"
-   # route for contact
+  # route for contact
   get "/contact", to: 'pages#contact', as: "contact"
+  # route for admin
+  get "/admin", to: 'admins#admin', as: "admin"
 end
 
