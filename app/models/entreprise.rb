@@ -17,7 +17,7 @@ class Entreprise < ApplicationRecord
   pg_search_scope :global_search,
                   against: [:name, :value_proposition_fr, :value_proposition_en, :content_fr, :content_en, :website],
                   associated_against: {
-                    tag: [:name]
+                    tag: [:name_fr, :name_en]
                   },
                   using: {
                     tsearch: { prefix: true }

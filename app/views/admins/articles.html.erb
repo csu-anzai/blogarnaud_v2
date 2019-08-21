@@ -1,0 +1,51 @@
+<!-- top menu -->
+<%= render 'menu-admin' %>
+
+<!-- add spacer for menu -->
+<div class="top-menu-spacer"></div>
+
+<!-- administrate articles  -->
+<main class="container-main">
+
+  <h1><i class="fas fa-user-lock"></i> Administration des articles</h1>
+
+  <!-- button to create an article -->
+  <button class="button-admin">
+    <%= link_to "Créer un article", new_article_path %>
+  </button>
+
+  <!-- iterate through all articles and create a card for each of them -->
+  <% @articles.each do |article| %>
+    <!-- create a card for the article -->
+    <figure class="card-article-index">
+      <!-- article image -->
+      <%= cl_image_tag article.photo, height: 300, width: 400, crop: :fill %>
+      <!-- article presentation -->
+      <figcaption class="card-article-index-summary">
+        <!-- header for date and tag -->
+        <div class="card-article-index-header">
+          <%= article.date %> | <%= article.tag.name_fr %>
+        </div>
+        <!-- title and truncated content -->
+        <h2><%= article.title_fr %></h2>
+        <p><%= truncate(strip_tags(article.content_fr.to_s), length: 600) %></p>
+        <!-- administration links -->
+        <div class="card-article-index-admin">
+          <!-- see article -->
+          <%= link_to article_path(article), target: "_blank" do %>
+          <i class="fas fa-eye"></i> Voir
+          <% end %>
+          <!-- update article -->
+          <%= link_to edit_article_path(article) do %>
+            <i class="fas fa-edit"></i> Modifier
+          <% end %>
+          <!-- destroy article -->
+         <%= link_to article_path(article), method: :delete, data: {confirm: "Supprimer cet article ?"} do %>
+          <i class="fas fa-trash"></i> Supprimer
+         <% end %>
+        </div>
+      </figcaption>
+    </figure>
+  <% end %>
+
+</main>

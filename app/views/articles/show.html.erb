@@ -15,7 +15,7 @@
      <!--  display tag icon -->
       <%= image_tag(path) %>
       <!-- display tag name -->
-     <h2><%= @article.tag.name %></h2>
+     <h2><%= @article.tag.name_fr %></h2>
     </section>
     <p><%= @article.date %></p>
     <h1><%= @article.title_fr %></h1>
@@ -60,7 +60,7 @@
 
     <!-- check if @readmore has results or not -->
     <% if @readmore == [] || @readmore.count == 1 %>
-      <p>Désolé, il n'y a pas d'autres articles sur le thème "<%= @article.tag.name %>" pour le moment</p>
+      <p>Désolé, il n'y a pas d'autres articles sur le thème "<%= @article.tag.name_fr %>" pour le moment</p>
    <!--  otherwise, iterate through results -->
     <% else %>
       <% @readmore.each do |result| %>
@@ -73,7 +73,7 @@
               <!-- header for date and tag -->
               <div class="card-article-index-header">
                 <%= result.date %> |
-                <%= result.tag.name %>
+                <%= result.tag.name_fr %>
               </div>
               <!-- title and truncated content -->
               <h2><%= result.title_fr %></h2>

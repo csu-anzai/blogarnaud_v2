@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @readmore = Article.global_search(@article.tag.name)
+    @readmore = Article.global_search(@article.tag.name_fr)
   end
 
   def new
