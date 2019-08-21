@@ -6,7 +6,7 @@
   <div class="margin-date">
     <%= f.input :date %>
   </div>
-  <%= f.input :tag_id, collection: Tag.all.order(name: :asc) %>
+  <%= f.input :tag_id, collection: Tag.all.order(name_fr: :asc) %>
   <%= f.input :photo %>
   <%= f.input :photo_cache, as: :hidden %>
 
