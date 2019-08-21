@@ -1,13 +1,20 @@
 class AdminsController < ApplicationController
   def admin
-    @articles = Article.all.order(date: :desc)
-    @entreprises = Entreprise.all
-    @tags = Tag.all.order(name: :asc)
-    @readers = Reader.all.order(id: :desc)
   end
 
   def articles
     @articles = Article.all.order(date: :desc)
   end
 
+  def entreprises
+    @entreprises = Entreprise.all.order(id: :asc)
+  end
+
+  def tags
+    @tags = Tag.all.order(name: :asc)
+  end
+
+  def readers
+    @readers = Reader.all.order(id: :desc)
+  end
 end
