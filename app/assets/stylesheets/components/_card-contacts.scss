@@ -1,0 +1,39 @@
+.card-contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  border-bottom: solid 1px $light-grey;
+  i {
+    font-size: 3rem;
+  }
+  .card-contact-info {
+    h5 {
+      font-family: $headers-font;
+      font-size: 1.3rem;
+      color: $dark-blue;
+      margin: 0;
+      padding-left: 2rem;
+    }
+    p {
+      font-family: $body-font;
+      font-size: 1rem;
+      color: $dark-blue;
+      margin: 0;
+      padding-left: 2rem;
+    }
+    .card-contact-info-date {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      font-family: $body-font;
+      font-size: .8rem;
+      color: $light-grey;
+    }
+    .trix-content {
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
+  }
+}

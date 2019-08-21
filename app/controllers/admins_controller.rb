@@ -14,7 +14,7 @@ class AdminsController < ApplicationController
     @tags = Tag.all.order(name_fr: :asc)
   end
 
-  def readers
+  def contacts
     @readers = Reader.all.order(id: :desc)
   end
 end

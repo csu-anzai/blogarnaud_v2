@@ -9,7 +9,7 @@
 
   <h1><i class="fas fa-user-lock"></i> Administration des articles</h1>
 
-  <!-- button to create and article -->
+  <!-- button to create an article -->
   <button class="button-admin">
     <%= link_to "Créer un article", new_article_path %>
   </button>
@@ -24,7 +24,7 @@
       <figcaption class="card-article-index-summary">
         <!-- header for date and tag -->
         <div class="card-article-index-header">
-          <%= article.date %> | <%= article.tag.name %>
+          <%= article.date %> | <%= article.tag.name_fr %>
         </div>
         <!-- title and truncated content -->
         <h2><%= article.title_fr %></h2>

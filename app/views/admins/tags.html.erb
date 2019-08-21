@@ -1,4 +1,3 @@
-tags.html.erb
 <!-- top menu -->
 <%= render 'menu-admin' %>
 
@@ -10,19 +9,19 @@ tags.html.erb
 
   <h1><i class="fas fa-user-lock"></i> Administration des tags</h1>
 
-  <!-- button to create and article -->
+  <!-- button to create a tag -->
   <button class="button-admin">
     <%= link_to "Créer un tag", new_tag_path %>
   </button>
 
-  <!-- iterate through all entreprises and create a card for each of them -->
+  <!-- iterate through all tags and create a card for each of them -->
   <% @tags.each do |tag| %>
     <!-- create a card for the tag -->
     <figure class="card-tags">
       <!-- tag icon -->
       <%= image_tag(tag.icon) %>
       <!-- tag information -->
-      <section class="card-tags-info">
+      <figcaption> class="card-tags-info">
         <p>FR -- <%= tag.name_fr %></p>
         <p>EN -- <%= tag.name_en %></p>
         <!-- administration links -->
@@ -36,7 +35,7 @@ tags.html.erb
             <i class="fas fa-trash"></i> Supprimer
           <% end %>
         </div>
-      </section>
+      </figcaption>
     </figure>
   <% end %>
 
