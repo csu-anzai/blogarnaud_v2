@@ -24,5 +24,7 @@ Rails.application.routes.draw do
   get "/contact", to: 'pages#contact', as: "contact"
   # route for admin
   get "/admin", to: 'admins#admin', as: "admin"
+  # route for admin articles
+  get "/admin_articles", to: 'admins#articles', as: "admin_articles"
 end
 
