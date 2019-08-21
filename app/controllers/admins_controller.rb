@@ -11,7 +11,7 @@ class AdminsController < ApplicationController
   end
 
   def tags
-    @tags = Tag.all.order(name: :asc)
+    @tags = Tag.all.order(name_fr: :asc)
   end
 
   def readers

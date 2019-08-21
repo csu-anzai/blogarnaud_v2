@@ -18,7 +18,8 @@ tags.html.erb
   <!-- iterate through all entreprises and create a card for each of them -->
   <% @tags.each do |tag| %>
     <%= image_tag(tag.icon) %>
-    <%= tag.name %>
+    <%= tag.name_fr %>
+    <%= tag.name_en %>
   <% end %>
 
 </main>
