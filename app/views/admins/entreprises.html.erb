@@ -1,1 +1,52 @@
-entreprises.html.erb
+<!-- top menu -->
+<%= render 'menu-admin' %>
+
+<!-- add spacer for menu -->
+<div class="top-menu-spacer"></div>
+
+<!-- administrate entreprises  -->
+<main class="container-main">
+
+  <h1><i class="fas fa-user-lock"></i> Administration des articles</h1>
+
+  <!-- button to create and article -->
+  <button class="button-admin">
+    <%= link_to "Créer une entreprise", new_entreprise_path %>
+  </button>
+
+  <!-- iterate through all entreprises and create a card for each of them -->
+  <% @entreprises.each do |entreprise| %>
+    <!-- create a card for each entreprise -->
+    <figure class="card-entreprise-index">
+      <!-- entreprise logo -->
+      <%= image_tag(entreprise.logo) %>
+      <!-- entreprise presentation -->
+      <figcaption class="card-entreprise-index-presentation">
+        <!-- entreprise name -->
+        <h1><%= entreprise.name %></h1>
+        <!-- value proposition -->
+        <h2><%= entreprise.value_proposition_fr %></h2>
+        <!-- entreprise content -->
+        <p>
+          <%= truncate(strip_tags(entreprise.content_fr.to_s), length: 600) %>
+        </p>
+        <!-- administration links -->
+        <div class="card-entreprise-index-admin">
+          <!-- see article -->
+          <%= link_to entreprise_path(entreprise), target: "_blank" do %>
+          <i class="fas fa-eye"></i> Voir
+          <% end %>
+          <!-- update article -->
+          <%= link_to edit_entreprise_path(entreprise) do %>
+            <i class="fas fa-edit"></i> Modifier
+          <% end %>
+          <!-- destroy article -->
+         <%= link_to entreprise_path(entreprise), method: :delete, data: {confirm: "Supprimer cette entreprise ?"} do %>
+          <i class="fas fa-trash"></i> Supprimer
+         <% end %>
+        </div>
+      </figcaption>
+    </figure>
+  <% end %>
+
+</main>

@@ -60,5 +60,20 @@
         color: $dark-blue;
       }
     }
+    .card-entreprise-index-admin {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      a {
+        text-decoration: none;
+        font-family: $headers-font;
+        font-size: 1rem;
+        color: $light-red;
+        margin-right: 1rem;
+        &:hover {
+          color: $light-grey;
+        }
+      }
+    }
   }
 }
