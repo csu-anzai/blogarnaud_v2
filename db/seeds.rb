@@ -17,43 +17,69 @@ Reader.destroy_all
 puts "SEEDING DB WITH ALL TAGS"
 
 puts "---creating tag for (1/12) gender equality"
-equality = Tag.create(name: "Egalité", icon: "icon_impact_equality.svg")
+equality = Tag.create(name_fr: "Egalité",
+                      name_en: "Gender Equality",
+                      icon: "icon_impact_equality.svg")
 
 puts "---creating tag for (2/12) education & culture"
-education = Tag.create(name: "Education & Culture", icon: "icon_impact_education.svg")
+education = Tag.create(name_fr: "Education & Culture",
+                       name_en: "Education & Culture",
+                       icon: "icon_impact_education.svg")
 
 puts "---creating tag for (3/12) energitical transition"
-energy = Tag.create(name: "Transition Energétique", icon: "icon_impact_energy.svg")
+energy = Tag.create(name_fr: "Transition Energétique",
+                    name_en: "Energitical Transition",
+                    icon: "icon_impact_energy.svg")
 
 puts "---creating tag for (4/12) in-home servicing"
-home_servicing = Tag.create(name: "Services à la personne", icon: "icon_impact_home-servicing.svg")
+home_servicing = Tag.create(name_fr: "Services à la personne",
+                            name_en: "In-home Services",
+                            icon: "icon_impact_home-servicing.svg")
 
 puts "---creating tag for (5/12) responsible housing"
-housing = Tag.create(name: "Habitat responsable", icon: "icon_impact_housing.svg")
+housing = Tag.create(name_fr: "Habitat responsable",
+                     name_en: "Sustainable Housing",
+                     icon: "icon_impact_housing.svg")
 
 puts "---creating tag for (6/12) health & well-being"
-health = Tag.create(name: "Santé & Bien-être", icon: "icon_impact_health.svg")
+health = Tag.create(name_fr: "Santé & Bien-être",
+                    name_en: "Heath & well-being",
+                    icon: "icon_impact_health.svg")
 
 puts "---creating tag for (7/12) short channels"
-short_channels = Tag.create(name: "Circuits courts", icon: "icon_impact_short-channels.svg")
+short_channels = Tag.create(name_fr: "Circuits courts",
+                            name_en: "Short Channels",
+                            icon: "icon_impact_short-channels.svg")
 
 puts "---creating tag for (8/12) aging"
-aging = Tag.create(name: "Vieillissement", icon: "icon_impact_aging.svg")
+aging = Tag.create(name_fr: "Vieillissement",
+                   name_en: "Population Aging",
+                   icon: "icon_impact_aging.svg")
 
 puts "---creating tag for (9/12) circular economy"
-circular_economy = Tag.create(name: "Economie circulaire", icon: "icon_impact_circular-economy.svg")
+circular_economy = Tag.create(name_fr: "Economie circulaire",
+                              name_en: "Circular Economy",
+                              icon: "icon_impact_circular-economy.svg")
 
 puts "---creating tag for (10/12) ecology"
-ecology = Tag.create(name: "Ecologie", icon: "icon_impact_ecology.svg")
+ecology = Tag.create(name_fr: "Ecologie",
+                     name_en: "Ecology",
+                     icon: "icon_impact_ecology.svg")
 
 puts "---creating tag for (11/12) animal care"
-animal_care = Tag.create(name: "Soins aux animaux", icon: "icon_impact_animal-care.svg")
+animal_care = Tag.create(name_fr: "Soins aux animaux",
+                         name_en: "Animal Care",
+                         icon: "icon_impact_animal-care.svg")
 
 puts "---creating tag for (12/12) responsible agriculture"
-agriculture = Tag.create(name: "Agriculture responsable", icon: "icon_impact_agriculture.svg")
+agriculture = Tag.create(name_fr: "Agriculture responsable",
+                         name_en: "Sustainable Agriculture",
+                         icon: "icon_impact_agriculture.svg")
 
 puts "---creating tag for (+1/+1) leadership"
-leadership = Tag.create(name: "Leadership", icon: "icon_theme_leadership.svg")
+leadership = Tag.create(name_fr: "Leadership",
+                        name_en: "leadership",
+                        icon: "icon_theme_leadership.svg")
 
 # ------- defining a lorem ipsum to seed test articles content -------
 puts "DEFINING A LOREM IPSUM"
