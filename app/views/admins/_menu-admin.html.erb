@@ -1,25 +1,47 @@
 <nav class="top-menu top-menu-admin">
-  <!-- link to metadata -->
+  <!-- link to admin menu -->
   <section class="top-menu-item">
-    <a href="#form-metadata"><%= image_tag('icon_menu_admin.svg') %></a>
-    <a href="#form-metadata">Metadata</a>
+    <%= link_to admin_path do %>
+      <%= image_tag('icon_menu_admin.svg') %>
+    <% end %>
+     <%= link_to admin_path do %>
+      Admin Page
+    <% end %>
   </section>
-  <!-- link to french section -->
+  <!-- link to article admin page -->
   <section class="top-menu-item">
-    <a href="#form-french"><%= image_tag('icon_menu_article.svg') %></a>
-    <a href="#form-french">Français</a>
+    <%= link_to admin_articles_path do %>
+      <%= image_tag('icon_menu_article.svg') %>
+    <% end %>
+     <%= link_to admin_articles_path do %>
+      Articles
+    <% end %>
   </section>
-  <!-- link to english section -->
+  <!-- link to entreprise admin page -->
   <section class="top-menu-item">
-    <a href="#form-english"><%= image_tag('icon_menu_factory.svg') %></a>
-    <a href="#form-english">Anglais</a>
+     <%= link_to admin_entreprises_path do %>
+      <%= image_tag('icon_menu_factory.svg') %>
+    <% end %>
+     <%= link_to admin_entreprises_path do %>
+      Entreprises
+    <% end %>
   </section>
+  <!-- link to tag admin page -->
   <section class="top-menu-item">
-    <a href="#form-english"><%= image_tag('icon_menu_tag.svg') %></a>
-    <a href="#form-english">Anglais</a>
+     <%= link_to admin_tags_path do %>
+      <%= image_tag('icon_menu_tag.svg') %>
+    <% end %>
+     <%= link_to admin_tags_path do %>
+      Tags
+    <% end %>
   </section>
+  <!-- link to contact admin page -->
   <section class="top-menu-item">
-    <a href="#form-english"><%= image_tag('icon_menu_reader.svg') %></a>
-    <a href="#form-english">Anglais</a>
+     <%= link_to admin_contacts_path do %>
+      <%= image_tag('icon_menu_reader.svg') %>
+    <% end %>
+     <%= link_to admin_contacts_path do %>
+      Contacts
+    <% end %>
   </section>
 </nav>
