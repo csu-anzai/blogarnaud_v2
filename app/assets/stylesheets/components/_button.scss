@@ -22,3 +22,29 @@
     color: inherit;
   }
 }
+
+.button-admin {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  padding: .8rem;
+  width: auto;
+  height: auto;
+  font-family: $headers-font;
+  font-size: 1rem;
+  color: $dark-blue;
+  background-color: $light-red;
+  border: .05rem solid $dark-blue;
+  box-shadow: 0rem .25rem .5rem 0rem rgba(23, 23, 23, 0.2);
+  border-radius: 2%;
+  margin-bottom: 2rem;
+  &:hover {
+    color: $light-red;
+    background-color: $dark-blue;
+    border: .05rem solid $light-red;
+  }
+  a {
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+}
