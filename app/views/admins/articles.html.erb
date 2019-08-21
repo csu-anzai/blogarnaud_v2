@@ -32,7 +32,7 @@
             <i class="fas fa-edit"></i> Modifier
           <% end %>
           <!-- destroy article -->
-         <%= link_to article_path(article), method: :delete do %>
+         <%= link_to article_path(article), method: :delete, data: {confirm: "Supprimer cet article ?"} do %>
           <i class="fas fa-trash"></i> Supprimer
          <% end %>
         </div>
