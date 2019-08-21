@@ -17,9 +17,27 @@ tags.html.erb
 
   <!-- iterate through all entreprises and create a card for each of them -->
   <% @tags.each do |tag| %>
-    <%= image_tag(tag.icon) %>
-    <%= tag.name_fr %>
-    <%= tag.name_en %>
+    <!-- create a card for the tag -->
+    <figure class="card-tags">
+      <!-- tag icon -->
+      <%= image_tag(tag.icon) %>
+      <!-- tag information -->
+      <section class="card-tags-info">
+        <p>FR -- <%= tag.name_fr %></p>
+        <p>EN -- <%= tag.name_en %></p>
+        <!-- administration links -->
+        <div class="card-tags-admin">
+          <!-- update tag -->
+          <%= link_to edit_tag_path(tag) do %>
+            <i class="fas fa-edit"></i> Modifier
+          <% end %>
+          <!-- destroy article -->
+          <%= link_to tag_path(tag), method: :delete, data: {confirm: "Supprimer ce tag ?"} do %>
+            <i class="fas fa-trash"></i> Supprimer
+          <% end %>
+        </div>
+      </section>
+    </figure>
   <% end %>
 
 </main>
