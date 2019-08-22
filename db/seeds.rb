@@ -13,6 +13,9 @@ Tag.destroy_all
 puts "---destroying all exising readers"
 Reader.destroy_all
 
+puts "---destroying all exising admin users"
+User.destroy_all
+
 # ------- seed db with all tags -------
 puts "SEEDING DB WITH ALL TAGS"
 
@@ -311,6 +314,13 @@ reader_05 = Reader.create(first_name: "Donald",
                           last_name: "Trump",
                           email: "donald@worldpresident.gov",
                           message: "Just a fuckin' pile of shit even Twitter is not worth hostin'. You suck you dick-head French")
+
+# ------- seed db with admin user -------
+puts "SEEDING DB WITH ADMIN USER"
+
+puts "---creating admin user (01/01) admin@ablog.com"
+admin = User.create(email: "admin@blog.com",
+                    password: "password")
 
 # ------- terminate -------
 puts "SEED COMPLETE"

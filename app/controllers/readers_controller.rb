@@ -1,4 +1,5 @@
 class ReadersController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:new, :create]
   before_action :set_reader, only: [:show, :edit, :update, :destroy]
 
   def index

@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  get 'entreprises/index'
-  get 'entreprises/show'
-  get 'entreprises/new'
-  get 'entreprises/create'
-  get 'entreprises/edit'
-  get 'entreprises/update'
+  # routes for users via devise
+  devise_for :users
+  # see if these can be deleted
+  # get 'entreprises/index'
+  # get 'entreprises/show'
+  # get 'entreprises/new'
+  # get 'entreprises/create'
+  # get 'entreprises/edit'
+  # get 'entreprises/update'
   get 'entreprises/destroy'
   # define homepage
   root to: 'pages#home'
