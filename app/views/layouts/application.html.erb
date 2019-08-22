@@ -15,9 +15,7 @@
     <%= render 'shared/navbar' %>
     <%= yield %>
 
-    <% if notice %>
-      <p class="alert"><%= notice %></p>
-    <% end %>
+    <%= render 'shared/flashes' %>
 
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
