@@ -5,4 +5,6 @@ class Tag < ApplicationRecord
   validates :name_fr, presence: true
   validates :name_en, presence: true
   validates :icon, presence: true
+
+  mount_uploader :icon, PhotoUploader
 end
