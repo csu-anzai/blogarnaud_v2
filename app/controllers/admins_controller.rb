@@ -4,6 +4,7 @@ class AdminsController < ApplicationController
     @entreprises = Entreprise.all.order(id: :asc)
     @tags = Tag.all.order(name_fr: :asc)
     @readers = Reader.all.order(id: :desc)
+    @users = User.all
   end
 
   def articles

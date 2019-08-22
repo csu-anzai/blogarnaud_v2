@@ -312,6 +312,13 @@ reader_05 = Reader.create(first_name: "Donald",
                           email: "donald@worldpresident.gov",
                           message: "Just a fuckin' pile of shit even Twitter is not worth hostin'. You suck you dick-head French")
 
+# ------- seed db with admin user -------
+puts "SEEDING DB WITH ADMIN USER"
+
+puts "---creating reader (01/05) al gore"
+admin = User.create(email: "admin@admin.com"
+                    password: "admin")
+
 # ------- terminate -------
 puts "SEED COMPLETE"
 

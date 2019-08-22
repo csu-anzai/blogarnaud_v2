@@ -8,6 +8,9 @@ gem 'carrierwave', '~> 1.2'
 # gem added to enable search
 gem 'pg_search'
 
+# gem added to enable authentication
+gem 'devise'
+
 # gems from le wagon minimal template
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
