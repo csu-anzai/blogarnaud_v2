@@ -1,4 +1,13 @@
 <nav class="top-menu top-menu-admin">
+  <!-- link to admin menu -->
+  <section class="top-menu-item">
+    <%= link_to admin_path do %>
+      <%= image_tag('icon_menu_admin.svg') %>
+    <% end %>
+     <%= link_to admin_path do %>
+      Admin Page
+    <% end %>
+  </section>
   <!-- link to metadata -->
   <section class="top-menu-item">
     <a href="#form-metadata"><%= image_tag('icon_menu_metadata.svg') %></a>
