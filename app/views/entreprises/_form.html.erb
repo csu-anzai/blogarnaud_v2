@@ -4,7 +4,7 @@
   <!-- metadata section -->
   <h5 id="form-metadata"><i class="fas fa-exclamation-circle"></i> Métadonnées de l'entreprise :</h5>
   <%= f.input :name, :label => "Nom de l'entreprise" %>
-  <%= f.input :tag_id, collection: Tag.all.order(name_fr: :asc) %>
+  <%= f.input :tag_id, collection: Tag.all.order(name_fr: :asc), label_method: :name_fr, value_method: :id %>
   <%= f.input :photo %>
   <%= f.input :logo %>
   <%= f.input :website %>
