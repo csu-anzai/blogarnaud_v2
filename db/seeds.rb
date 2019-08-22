@@ -246,8 +246,8 @@ puts "---creating entreprise (1/4) the green group"
 the_green_group = Entreprise.create(name: "TheGreenGroup",
                                     value_proposition_fr: "Une value proposition de ouf qui va venir bientôt",
                                     content_fr: lorem_ipsum,
-                                    photo: "img_entreprise_thegreengroup.jpg",
-                                    logo: "logo_thegreengroup.png",
+                                    remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566467126/img_entreprise_thegreengroup_eixdmp.jpg",
+                                    remote_logo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566467506/logo_thegreengroup_xvj7nj.png",
                                     website: "http://www.google.com",
                                     tag_id: ecology.id)
 
@@ -255,8 +255,8 @@ puts "---creating entreprise (2/4) together.io"
 together = Entreprise.create(name: "together.io",
                              value_proposition_fr: "Une value proposition de ouf qui va venir bientôt",
                              content_fr: lorem_ipsum,
-                             photo: "img_entreprise_together.jpg",
-                             logo: "logo_together.png",
+                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566467127/img_entreprise_together_y3n1tq.jpg",
+                             remote_logo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566467511/logo_together_wlmsiu.png",
                              website: "http://www.google.com",
                              tag_id: ecology.id)
 
@@ -264,8 +264,8 @@ puts "---creating entreprise (3/4) fund a better place"
 fabp = Entreprise.create(name: "Fund a Better Place",
                          value_proposition_fr: "Une value proposition de ouf qui va venir bientôt",
                          content_fr: lorem_ipsum,
-                         photo: "img_entreprise_fundabetterplace.jpg",
-                         logo: "logo_fundabetterplace.png",
+                         remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566467126/img_entreprise_fundabetterplace_wug27k.jpg",
+                         remote_logo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566467495/logo_fundabetterplace_rdclkj.png",
                          website: "http://www.google.com",
                          tag_id: ecology.id)
 
@@ -273,8 +273,8 @@ puts "---creating entreprise (4/4) maanaz"
 maanaz = Entreprise.create(name: "Maanaz",
                            value_proposition_fr: "Une value proposition de ouf qui va venir bientôt",
                            content_fr: lorem_ipsum,
-                           photo: "img_entreprise_maanaz.jpg",
-                           logo: "logo_maanaz.png",
+                           remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566467136/img_entreprise_maanaz_ti4bma.jpg",
+                           remote_logo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566467501/logo_maanaz_wburvb.png",
                            website: "http://www.google.com",
                            tag_id: education.id)
 

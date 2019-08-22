@@ -8,6 +8,9 @@ class Entreprise < ApplicationRecord
   validates :logo, presence: true
   validates :website, presence: true
 
+  mount_uploader :photo, PhotoUploader
+  mount_uploader :logo, PhotoUploader
+
   has_rich_text :value_proposition_fr
   has_rich_text :value_proposition_en
   has_rich_text :content_fr
