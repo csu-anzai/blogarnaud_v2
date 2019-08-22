@@ -1,0 +1,13 @@
+<!-- form to create or edit tag -->
+<%= simple_form_for(tag) do |f| %>
+
+  <!-- metadata section -->
+  <h5 id="form-metadata"><i class="fas fa-exclamation-circle"></i> Métadonnées tu tag :</h5>
+  <%= f.input :icon %>
+  <%= f.input :icon_cache, as: :hidden %>
+  <%= f.input :name_fr, :label => "Nom en Français" %>
+  <%= f.input :name_en, :label => "Nom en Anglais" %>
+
+  <!-- submit -->
+  <%= f.submit "Enregistrer ce tag", class: "button-banner" %>
+<% end %>
