@@ -10,10 +10,8 @@
   <!-- create card for article title -->
   <section class="card-article-show-title" id="show-article-title">
     <section class="card-article-show-title-tag">
-      <!-- variable to store path to tag icon -->
-      <% path = @article.tag.icon %>
      <!--  display tag icon -->
-      <%= image_tag(path) %>
+      <%= cl_image_tag(@article.tag.icon) %>
       <!-- display tag name -->
      <h2><%= @article.tag.name_fr %></h2>
     </section>
