@@ -19,67 +19,67 @@ puts "SEEDING DB WITH ALL TAGS"
 puts "---creating tag for (1/12) gender equality"
 equality = Tag.create(name_fr: "Egalité",
                       name_en: "Gender Equality",
-                      icon: "icon_impact_equality.svg")
+                      remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469587/icon_impact_equality_qzyvw7.svg")
 
 puts "---creating tag for (2/12) education & culture"
 education = Tag.create(name_fr: "Education & Culture",
                        name_en: "Education & Culture",
-                       icon: "icon_impact_education.svg")
+                       remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469585/icon_impact_education_pibhei.svg")
 
 puts "---creating tag for (3/12) energitical transition"
 energy = Tag.create(name_fr: "Transition Energétique",
                     name_en: "Energitical Transition",
-                    icon: "icon_impact_energy.svg")
+                    remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469585/icon_impact_energy_ojft0h.svg")
 
 puts "---creating tag for (4/12) in-home servicing"
 home_servicing = Tag.create(name_fr: "Services à la personne",
                             name_en: "In-home Services",
-                            icon: "icon_impact_home-servicing.svg")
+                            remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469587/icon_impact_home-servicing_xrqfvc.svg")
 
 puts "---creating tag for (5/12) responsible housing"
 housing = Tag.create(name_fr: "Habitat responsable",
                      name_en: "Sustainable Housing",
-                     icon: "icon_impact_housing.svg")
+                     remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469587/icon_impact_housing_j6ato9.svg")
 
 puts "---creating tag for (6/12) health & well-being"
 health = Tag.create(name_fr: "Santé & Bien-être",
                     name_en: "Heath & well-being",
-                    icon: "icon_impact_health.svg")
+                    remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469587/icon_impact_health_xowtpc.svg")
 
 puts "---creating tag for (7/12) short channels"
 short_channels = Tag.create(name_fr: "Circuits courts",
                             name_en: "Short Channels",
-                            icon: "icon_impact_short-channels.svg")
+                            remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469587/icon_impact_short-channels_x0c5wp.svg")
 
 puts "---creating tag for (8/12) aging"
 aging = Tag.create(name_fr: "Vieillissement",
                    name_en: "Population Aging",
-                   icon: "icon_impact_aging.svg")
+                   remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469585/icon_impact_aging_e24wlt.svg")
 
 puts "---creating tag for (9/12) circular economy"
 circular_economy = Tag.create(name_fr: "Economie circulaire",
                               name_en: "Circular Economy",
-                              icon: "icon_impact_circular-economy.svg")
+                              remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469585/icon_impact_circular-economy_vdv6o8.svg")
 
 puts "---creating tag for (10/12) ecology"
 ecology = Tag.create(name_fr: "Ecologie",
                      name_en: "Ecology",
-                     icon: "icon_impact_ecology.svg")
+                     remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469587/icon_impact_ecology_wl81gm.svg")
 
 puts "---creating tag for (11/12) animal care"
 animal_care = Tag.create(name_fr: "Soins aux animaux",
                          name_en: "Animal Care",
-                         icon: "icon_impact_animal-care.svg")
+                         remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469585/icon_impact_animal-care_hxxw2z.svg")
 
 puts "---creating tag for (12/12) responsible agriculture"
 agriculture = Tag.create(name_fr: "Agriculture responsable",
                          name_en: "Sustainable Agriculture",
-                         icon: "icon_impact_agriculture.svg")
+                         remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469585/icon_impact_agriculture_x9xvsq.svg")
 
 puts "---creating tag for (+1/+1) leadership"
 leadership = Tag.create(name_fr: "Leadership",
                         name_en: "leadership",
-                        icon: "icon_theme_leadership.svg")
+                        remote_icon_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1566469600/icon_theme_leadership_ivy5es.svg")
 
 # ------- defining a lorem ipsum to seed test articles content -------
 puts "DEFINING A LOREM IPSUM"

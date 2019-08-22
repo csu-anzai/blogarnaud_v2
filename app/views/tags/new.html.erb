@@ -1,2 +1,11 @@
-<h1>Tags#new</h1>
-<p>Find me in app/views/tags/new.html.erb</p>
+<!-- top menu -->
+<%= render 'admins/menu-admin' %>
+
+<!-- add spacer for menu -->
+<div class="top-menu-spacer"></div>
+
+<!-- form to create a tag -->
+<main class="container-form">
+  <h1>Admin | Créer un tag</h1>
+  <%= render 'form', tag: @tag %>
+</main>
