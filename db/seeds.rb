@@ -315,8 +315,8 @@ reader_05 = Reader.create(first_name: "Donald",
 # ------- seed db with admin user -------
 puts "SEEDING DB WITH ADMIN USER"
 
-puts "---creating reader (01/05) al gore"
-admin = User.create(email: "admin@admin.com"
+puts "---creating admin user (01/01) admin@admin.com"
+admin = User.create(email: "admin@admin.com",
                     password: "admin")
 
 # ------- terminate -------
