@@ -15,7 +15,7 @@ class TagsController < ApplicationController
   def create
     @tag = Tag.new(tag_params)
     if @tag.save
-      redirect_to @tags, notice: "Tag was succesfully created"
+      redirect_to admin_tags_path, notice: "Tag was succesfully created"
     else
       render :new
     end
@@ -26,7 +26,7 @@ class TagsController < ApplicationController
 
   def update
     if @tag.update(tag_params)
-      redirect_to @tag, notice: 'Tag was successfully updated'
+      redirect_to admin_tags_path, notice: 'Tag was successfully updated'
     else
       render :edit
     end
@@ -34,7 +34,7 @@ class TagsController < ApplicationController
 
   def destroy
     @tag.destroy
-    redirect_to tags_url, notice: 'Article was successfully destroyed'
+    redirect_to admin_tags_path, notice: 'Article was successfully destroyed'
   end
 
   private
