@@ -15,7 +15,7 @@ class EntreprisesController < ApplicationController
   def create
     @entreprise = Entreprise.new(entreprise_params)
     if @entreprise.save
-      redirect_to @entreprise, notice: 'Entreprise was succesfully created'
+      redirect_to admin_entreprises_path, notice: 'Entreprise was succesfully created'
     else
       render :new
     end
@@ -26,7 +26,7 @@ class EntreprisesController < ApplicationController
 
   def update
     if @entreprise.update(entreprise_params)
-      redirect_to @entreprise, notice: 'Entreprise was succesfully updated'
+      redirect_to admin_entreprises_path, notice: 'Entreprise was succesfully updated'
     else
       render :edit
     end
@@ -34,7 +34,7 @@ class EntreprisesController < ApplicationController
 
   def destroy
     @entreprise.destroy
-    redirect_to entreprises_url, notice: 'Entreprise was succesfully destroyed'
+    redirect_to admin_entreprises_path, notice: 'Entreprise was succesfully destroyed'
   end
 
   private
