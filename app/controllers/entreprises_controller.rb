@@ -45,6 +45,6 @@ class EntreprisesController < ApplicationController
 
   def entreprise_params
     params.require(:entreprise).permit(:name, :value_proposition_fr, :value_proposition_en,
-                                       :content_fr, :content_en, :photo, :logo, :tag_id)
+                                       :content_fr, :content_en, :photo, :logo, :website, :tag_id)
   end
 end
