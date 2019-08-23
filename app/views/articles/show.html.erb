@@ -45,9 +45,10 @@
       <%= link_to "#" do %>
         <i class="fab fa-facebook-square"></i>
       <% end %>
-       <!-- email -->
-      <%= link_to "#" do %>
-        <i class="fas fa-paper-plane"></i>
+      <!-- email -->
+      <% body = "J'ai pensé que cet article t'intéresserait :\n\n#{truncate(strip_tags(@article.content_fr.to_s), length: 100000000)}\n\nLire plus sur http://www.arnaudrioche.com" %>
+      <%= mail_to "", html_options = {:subject => @article.title_fr, :body => body} do %>
+        <i class="fas fa-envelope"></i>
       <% end %>
     </section>
   </section>
