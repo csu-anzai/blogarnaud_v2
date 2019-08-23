@@ -50,9 +50,10 @@
       <%= link_to "#" do %>
         <i class="fab fa-facebook-square"></i>
       <% end %>
-       <!-- email -->
-      <%= link_to "#" do %>
-        <i class="fas fa-paper-plane"></i>
+      <!-- email -->
+      <% body = "J'ai pensé que cette entreprise t'intéresserait :\n\n#{truncate(strip_tags(@entreprise.value_proposition_fr.to_s), length: 100000000)}\n\n#{truncate(strip_tags(@entreprise.content_fr.to_s), length: 100000000)}\n\nSite web: #{@entreprise.website}\n\nLire plus sur http://www.arnaudrioche.com" %>
+      <%= mail_to "", html_options = {:subject => @entreprise.name, :body => body} do %>
+        <i class="fas fa-envelope"></i>
       <% end %>
     </section>
   </section>
