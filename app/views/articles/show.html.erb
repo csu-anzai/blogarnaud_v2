@@ -9,12 +9,12 @@
   <meta property="og:url" content="<%= request.original_url %>" />
   <meta property="og:image" content="<%= image_url(@article.photo) %>" />
   <meta property="og:description" content="<%= truncate(strip_tags(@article.content_fr.to_s), length: 100) %>" />
-  <meta property="og:site_name" content="Blog | Arnaud Rioche" />
+  <meta property="og:site_name" content="<%= meta_site_name %>" />
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
   <meta name="twitter:title" content="<%= @article.title_fr %>">
-  <meta name="twitter:description" content="<%= meta_description %>">
+  <meta name="twitter:description" content="<%= truncate(strip_tags(@article.content_fr.to_s), length: 100) %>">
   <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
   <meta name="twitter:image:src" content="<%= image_url(@article.photo) %>">
 <% end %>
