@@ -1,3 +1,9 @@
+<!-- customization of the head section -->
+<% content_for :head do %>
+  <!-- title and name -->
+  <title>Blog | Arnaud Rioche | Admin | Edit Article <%= @article.title_fr %></title>
+<% end %>
+
 <!-- top menu -->
 <%= render 'menu-new-edit' %>
 
