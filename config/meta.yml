@@ -1,0 +1,5 @@
+meta_product_name: "Blog | Arnaud Rioche"
+meta_title: "Blog | Arnaud Rioche"
+meta_description: "Blog | Arnaud Rioche"
+meta_image: "img_arnaudrioche.png" # should exist in `app/assets/images/`
+twitter_account: "@ArnaudRioche"   # required for Twitter Cards
