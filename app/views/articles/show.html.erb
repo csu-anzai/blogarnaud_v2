@@ -51,27 +51,23 @@
     <h2>Partagez cet article !</h2>
     <section class="card-article-show-share-medias">
       <!-- linkedin -->
-      <%= link_to "#" do %>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%= request.original_url %>&title=<%= @article.title_fr %>&summary=&source=">
         <i class="fab fa-linkedin"></i>
-      <% end %>
+      </a>
       <!-- viadeo -->
-      <%= link_to "#" do %>
+      <a href="http://www.viadeo.com/shareit/share/?url=<%= request.original_url %>&title=<%= @article.title_fr %>">
         <i class="fab fa-viadeo-square"></i>
-      <% end %>
+      </a>
       <!-- twitter -->
-      <%= link_to "#" do %>
+      <a href="https://twitter.com/intent/tweet?text=<%= request.original_url %>">
         <i class="fab fa-twitter-square"></i>
-      <% end %>
-
+      </a>
       <!-- facebook -->
-      <%#= link_to "#" do %>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=<%= request.original_url %>">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-      <%# end %>
-
+      <a href="https://www.facebook.com/sharer/sharer.php?u=<%= request.original_url %>">
+        <i class="fab fa-facebook-square"></i>
+      </a>
       <!-- email -->
-      <% body = "J'ai pensé que cet article t'intéresserait :\n\n#{truncate(strip_tags(@article.content_fr.to_s), length: 100000000)}\n\nLire plus sur http://www.arnaudrioche.com" %>
+      <% body = "J'ai pensé que cet article t'intéresserait :\n\n#{strip_tags(@article.content_fr.to_s)}\n\nLire plus sur http://www.arnaudrioche.com" %>
       <%= mail_to "", html_options = {:subject => @article.title_fr, :body => body} do %>
         <i class="fas fa-envelope"></i>
       <% end %>
@@ -85,7 +81,7 @@
     <!-- check if @readmore has results or not -->
     <% if @readmore == [] || @readmore.count == 1 %>
       <p>Désolé, il n'y a pas d'autres articles sur le thème "<%= @article.tag.name_fr %>" pour le moment</p>
-   <!--  otherwise, iterate through results -->
+    <!--  otherwise, iterate through results -->
     <% else %>
       <% @readmore.each do |result| %>
         <!-- check if article is the same as the one being read and skip if true -->
