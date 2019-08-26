@@ -81,7 +81,7 @@
     <!-- check if @readmore has results or not -->
     <% if @readmore == [] || @readmore.count == 1 %>
       <p>Désolé, il n'y a pas d'autres articles sur le thème "<%= @article.tag.name_fr %>" pour le moment</p>
-   <!--  otherwise, iterate through results -->
+    <!--  otherwise, iterate through results -->
     <% else %>
       <% @readmore.each do |result| %>
         <!-- check if article is the same as the one being read and skip if true -->
