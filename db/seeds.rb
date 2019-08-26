@@ -115,7 +115,7 @@ rem id non meruerim, quam quod est gravius cur inpetraverim mussitare."
 puts "SEEDING DB WITH SOME TEST ARTICLES"
 
 puts "---creating article (1/16) on water"
-article_01 = Article.create(title_fr: "L'eau blablablablablablablabla blablablablablablablabla",
+article_01 = Article.create(title_fr: "L'eau blablabla blabla bla blabla",
                             date: "01/08/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278932/dvfo4lqyjh5f0yppdeh1.jpg",
                             content_fr: lorem_ipsum,
@@ -123,7 +123,7 @@ article_01 = Article.create(title_fr: "L'eau blablablablablablablabla blablablab
                             tag_id: ecology.id)
 
 puts "---creating article (2/16) on animal care"
-article_02 = Article.create(title_fr: "Les animaux blablablablablablablabla blablablablablablablabla",
+article_02 = Article.create(title_fr: "Les animaux blablabla blabla bla blabla",
                             date: "13/08/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278871/rmb3qlrnfyqg6np1ssis.jpg",
                             content_fr: lorem_ipsum,
@@ -131,7 +131,7 @@ article_02 = Article.create(title_fr: "Les animaux blablablablablablablabla blab
                             tag_id: animal_care.id)
 
 puts "---creating article (3/16) on education"
-article_03 = Article.create(title_fr: "L'éducation blablablablablablablabla blablablablablablablabla",
+article_03 = Article.create(title_fr: "L'éducation blablabla blabla bla blabla",
                             date: "01/07/2018",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278796/ixjmcb8pfufylr5sau8s.jpg",
                             content_fr: lorem_ipsum,
@@ -139,7 +139,7 @@ article_03 = Article.create(title_fr: "L'éducation blablablablablablablabla bla
                             tag_id: education.id)
 
 puts "---creating article (4/16) on animal care"
-article_04 = Article.create(title_fr: "Les vaches blablablablablablablabla blablablablablablablabla",
+article_04 = Article.create(title_fr: "Les vaches blablabla blabla bla blabla",
                             date: "14/06/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278713/my3f3sqc7e26bh82rlsh.jpg",
                             content_fr: lorem_ipsum,
@@ -147,7 +147,7 @@ article_04 = Article.create(title_fr: "Les vaches blablablablablablablabla blabl
                             tag_id: animal_care.id)
 
 puts "---creating article (5/16) on culture"
-article_05 = Article.create(title_fr: "La musique blablablablablablablabla blablablablablablablabla",
+article_05 = Article.create(title_fr: "La musique blablabla blabla bla blabla",
                             date: "18/07/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278647/dcq3yvvuhbyfboh2nked.jpg",
                             content_fr: lorem_ipsum,
@@ -155,7 +155,7 @@ article_05 = Article.create(title_fr: "La musique blablablablablablablabla blabl
                             tag_id: education.id)
 
 puts "---creating article (6/16) on equality"
-article_06 = Article.create(title_fr: "L'égalité blablablablablablablabla blablablablablablablabla",
+article_06 = Article.create(title_fr: "L'égalité blablabla blabla bla blabla",
                             date: "12/02/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278521/pjxc67lmcooupg2inaxv.jpg",
                             content_fr: lorem_ipsum,
@@ -171,7 +171,7 @@ article_07 = Article.create(title_fr: "Notre terre nourricière est en danger d'
                             tag_id: agriculture.id)
 
 puts "---creating article (8/16) on forests"
-article_08 = Article.create(title_fr: "Les forêts blablablablablablablabla blablablablablablablabla",
+article_08 = Article.create(title_fr: "Les forêts blablabla blabla bla blabla",
                             date: "08/02/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278364/gj3w3r1huse1ffpt2lr1.jpg",
                             content_fr: lorem_ipsum,
@@ -179,7 +179,7 @@ article_08 = Article.create(title_fr: "Les forêts blablablablablablablabla blab
                             tag_id: ecology.id)
 
 puts "---creating article (9/16) on mindfulness"
-article_09 = Article.create(title_fr: "La pleine conscience blablablablablablablabla blablablablablablablabla",
+article_09 = Article.create(title_fr: "La pleine conscience blablabla blabla bla blabla",
                             date: "07/04/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278292/tl9p3c3cyvzsybyv7pl6.jpg",
                             content_fr: lorem_ipsum,
@@ -187,7 +187,7 @@ article_09 = Article.create(title_fr: "La pleine conscience blablablablablablabl
                             tag_id: health.id)
 
 puts "---creating article (10/16) on recycling"
-article_10 = Article.create(title_fr: "Le recyclage blablablablablablablabla blablablablablablablabla",
+article_10 = Article.create(title_fr: "Le recyclage blablabla blabla bla blabla",
                             date: "23/10/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278144/w4tgros2pfk9jaduiyiq.jpg",
                             content_fr: lorem_ipsum,
@@ -195,7 +195,7 @@ article_10 = Article.create(title_fr: "Le recyclage blablablablablablablabla bla
                             tag_id: circular_economy.id)
 
 puts "---creating article (11/16) on energy"
-article_11 = Article.create(title_fr: "La transition énergétique blablablablablablablabla blablablablablablablabla",
+article_11 = Article.create(title_fr: "La transition énergétique blablabla blabla bla blabla",
                             date: "16/07/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565278071/ia2ss3vijrf4umpda1hr.jpg",
                             content_fr: lorem_ipsum,
@@ -203,7 +203,7 @@ article_11 = Article.create(title_fr: "La transition énergétique blablablablab
                             tag_id: energy.id)
 
 puts "---creating article (12/16) on aging"
-article_12 = Article.create(title_fr: "Les personnes agées blablablablablablablabla blablablablablablablabla",
+article_12 = Article.create(title_fr: "Les personnes agées blablabla blabla bla blabla",
                             date: "29/11/2017",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277998/naoiebztrhsiu6x5letf.jpg",
                             content_fr: lorem_ipsum,
@@ -211,7 +211,7 @@ article_12 = Article.create(title_fr: "Les personnes agées blablablablablablabl
                             tag_id: aging.id)
 
 puts "---creating article (13/16) on agriculture"
-article_13 = Article.create(title_fr: "Le maïs blablablablablablablabla blablablablablablablabla",
+article_13 = Article.create(title_fr: "Le maïs blablabla blabla bla blabla",
                             date: "18/11/2018",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277928/yf99ttybnvq26xuuqehe.jpg",
                             content_fr: lorem_ipsum,
@@ -219,7 +219,7 @@ article_13 = Article.create(title_fr: "Le maïs blablablablablablablabla blablab
                             tag_id: agriculture.id)
 
 puts "---creating article (14/16) on in-home servicing"
-article_14 = Article.create(title_fr: "Les services à la personne blablablablablablablabla blablablablablablablabla",
+article_14 = Article.create(title_fr: "Les services à la personne blablabla blabla bla blabla",
                             date: "05/03/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277806/hufkcvzsfbtkcakl7jwr.jpg",
                             content_fr: lorem_ipsum,
@@ -227,7 +227,7 @@ article_14 = Article.create(title_fr: "Les services à la personne blablablablab
                             tag_id: home_servicing.id)
 
 puts "---creating article (15/16) on ecology"
-article_15 = Article.create(title_fr: "Les bouteilles en plastique blablablablablablablabla blablablablablablablabla",
+article_15 = Article.create(title_fr: "Les bouteilles en plastique blablabla blabla bla blabla",
                             date: "31/07/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277717/jrjxewuhojz3oodujfuw.jpg",
                             content_fr: lorem_ipsum,
@@ -235,7 +235,7 @@ article_15 = Article.create(title_fr: "Les bouteilles en plastique blablablablab
                             tag_id: ecology.id)
 
 puts "---creating article (16/16) on short channels"
-article_16 = Article.create(title_fr: "Les circuits courts blablablablablablablabla blablablablablablablabla",
+article_16 = Article.create(title_fr: "Les circuits courts blablabla blabla bla blabla",
                             date: "15/01/2019",
                             remote_photo_url: "https://res.cloudinary.com/dytp1k7cw/image/upload/v1565277561/delwzuub2vgt9g90jfpz.jpg",
                             content_fr: lorem_ipsum,
