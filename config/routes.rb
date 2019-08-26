@@ -1,24 +1,16 @@
 Rails.application.routes.draw do
   # routes for users via devise
   devise_for :users
-  # see if these can be deleted
-  # get 'entreprises/index'
-  # get 'entreprises/show'
-  # get 'entreprises/new'
-  # get 'entreprises/create'
-  # get 'entreprises/edit'
-  # get 'entreprises/update'
-  get 'entreprises/destroy'
   # define homepage
   root to: 'pages#home'
   # crud routes for tags
-  resources :tags
+  resources :tags, except: [:index, :show]
   # crud routes for articles
   resources :articles
   # crud routes for entreprises
   resources :entreprises
   # crud routes for readers
-  resources :readers
+  resources :readers, except: [:index, :show, :edit, :update, :destroy]
   # route for positive impact page
   get "/positive-impact", to: 'pages#positive-impact', as: "positiveimpact"
   # route for profile
