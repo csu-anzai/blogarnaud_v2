@@ -1,2 +1,17 @@
-<h1>Tags#edit</h1>
-<p>Find me in app/views/tags/edit.html.erb</p>
+<!-- customization of the head section -->
+<% content_for :head do %>
+  <!-- title and name -->
+  <title>Blog | Arnaud Rioche | Admin | Edit Tag <%= @tag.name_fr %></title>
+<% end %>
+
+<!-- top menu -->
+<%= render 'admins/menu-admin' %>
+
+<!-- add spacer for menu -->
+<div class="top-menu-spacer"></div>
+
+<!-- form to update a tag -->
+<main class="container-form">
+  <h1>Admin | Modifier un tag</h1>
+  <%= render 'form', tag: @tag %>
+</main>

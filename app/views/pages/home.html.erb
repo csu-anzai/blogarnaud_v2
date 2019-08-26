@@ -1,3 +1,24 @@
+<!-- customization of the head section -->
+<% content_for :head do %>
+  <!-- title and name -->
+  <title>Blog | Arnaud Rioche | Home</title>
+  <meta name="description" content="Blog | Arnaud Rioche | Home">
+  <!-- Facebook Open Graph data -->
+  <meta property="og:title" content="<%= DEFAULT_META["meta_title"] %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<%= request.original_url %>" />
+  <meta property="og:image" content="<%= DEFAULT_META["meta_image"] %>" />
+  <meta property="og:description" content="<%= DEFAULT_META["meta_description"] %>" />
+  <meta property="og:site_name" content="<%= DEFAULT_META["meta_site_name"] %>" />
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
+  <meta name="twitter:title" content="<%= DEFAULT_META["meta_title"] %>">
+  <meta name="twitter:description" content="<%= DEFAULT_META["meta_description"] %>">
+  <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
+  <meta name="twitter:image:src" content="<%= DEFAULT_META["meta_image"] %>">
+<% end %>
+
 <!-- carousel with the profile picture as active item and the 5 latest posts -->
 <main class="carousel-full-page">
   <section id="carousel-home-page" class="carousel slide" data-ride="carousel">
