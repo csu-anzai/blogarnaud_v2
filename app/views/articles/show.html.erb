@@ -9,7 +9,7 @@
   <meta property="og:url" content="<%= request.original_url %>" />
   <meta property="og:image" content="<%= image_url(@article.photo) %>" />
   <meta property="og:description" content="<%= truncate(strip_tags(@article.content_fr.to_s), length: 100) %>" />
-  <meta property="og:site_name" content="<%= meta_site_name %>" />
+  <meta property="og:site_name" content="<%= DEFAULT_META["meta_site_name"] %>" />
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
