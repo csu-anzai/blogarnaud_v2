@@ -4,12 +4,12 @@
   <title>Blog | Arnaud Rioche | Entreprises</title>
   <meta name="description" content="Blog | Arnaud Rioche | Entreprises">
   <!-- Facebook Open Graph data -->
-  <meta property="og:title" content="meta_title" />
+  <meta property="og:title" content=<%= DEFAULT_META["meta_title"] %> />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<%= request.original_url %>" />
-  <meta property="og:image" content="<%= meta_image %>" />
-  <meta property="og:description" content="<%= meta_description %>" />
-  <meta property="og:site_name" content="<%= meta_site_name %>" />
+  <meta property="og:image" content=<%= DEFAULT_META["meta_image"] %> />
+  <meta property="og:description" content="<%= DEFAULT_META["meta_description"] %>" />
+  <meta property="og:site_name" content="<%= DEFAULT_META["meta_site_name"] %>" />
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
