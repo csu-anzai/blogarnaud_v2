@@ -30,4 +30,9 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  # home page
+  home:
+    welcome_title: "Welcome to my website"
+    welcome_caption: "some text to say hello to everybody and say who I am"
+    profile: "Profile ->"
+    read: "Read ->"

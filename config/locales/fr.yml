@@ -1,1 +1,8 @@
 fr:
+  # home pageS
+  home:
+    welcome_title: "Bienvenue sur mon site"
+    welcome_caption: "du texte pour dire bonjour à tout le monde et qui je suis"
+    profile: "Profil ->"
+    read: "Lire ->"
+

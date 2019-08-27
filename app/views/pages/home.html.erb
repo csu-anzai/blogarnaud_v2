@@ -42,9 +42,9 @@
           <%= image_tag('img_arnaudrioche.png', class: "d-block w-100 carousel-image") %>
         </div>
         <div class="carousel-banner">
-          <h1>First slide label</h1>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <%= link_to "Profil ->", profile_path %>
+          <h1><%= t('home.welcome_title') %></h1>
+          <p><%= t('home.welcome_caption') %></p>
+          <%= link_to t('home.profile'), profile_path %>
         </div>
       </section>
 
@@ -57,7 +57,7 @@
           <div class="carousel-banner">
             <h1><%= article.title_fr %></h1>
             <p><%= truncate(strip_tags(article.content_fr.to_s), length: 450) %></p>
-            <%= link_to "Lire ->", article_path(article) %>
+            <%= link_to t('home.read'), article_path(article) %>
           </div>
         </section>
       <% end %>
