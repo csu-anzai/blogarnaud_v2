@@ -1,9 +1,9 @@
 .top-menu {
   width: 100vw;
-  height: 14vh;
+  height: 60px;
   position: fixed;
-  top: 0;
-  z-index: 500;
+  top: 40px;
+  z-index: 1000;
   background-color: $light-grey;
   opacity: .9;
   display: flex;
@@ -11,8 +11,6 @@
   align-items: center;
   padding-right: 1rem;
   padding-left: 1rem;
-  padding-top: 7vh;
-  padding-bottom: 1vh;
   .top-menu-item {
     display: flex;
     flex-direction: column;
@@ -24,8 +22,8 @@
       font-size: .8rem;
       color: $dark-blue;
       img {
-        width: 4vh;
-        height: 4vh;
+        width: 28px;
+        height: 28px;
       }
     }
   }
@@ -36,9 +34,9 @@
 }
 
 .top-menu-spacer {
-  margin-top: 15vh;
+  margin-top: 115px;
 }
 
 .top-menu-banner-spacer {
-  margin-top: 12vh;
+  margin-top: 100px;
 }
