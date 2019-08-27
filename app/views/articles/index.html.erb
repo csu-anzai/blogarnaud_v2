@@ -34,13 +34,31 @@
         <!-- header for date and tag -->
         <div class="card-article-index-header">
           <%= article.date %> |
-          <%= article.tag.name_fr %>
+          <!-- display tag either in fr or en -->
+          <% if I18n.locale == :en %>
+            <%= article.tag.name_en %>
+          <% else %>
+            <%= article.tag.name_fr %>
+          <% end %>
         </div>
-        <!-- title and truncated content -->
-        <h2><%= article.title_fr %></h2>
-        <p><%= truncate(strip_tags(article.content_fr.to_s), length: 600) %></p>
+        <!-- display title either in fr or en -->
+        <h2>
+          <% if I18n.locale == :en %>
+            <%= article.title_en %>
+          <% else %>
+            <%= article.title_fr %>
+          <% end %>
+        </h2>
+        <!-- display truncated content either in fr or en -->
+        <p>
+          <% if I18n.locale == :en %>
+            <%= truncate(strip_tags(article.content_en.to_s), length: 600) %>
+          <% else %>
+            <%= truncate(strip_tags(article.content_fr.to_s), length: 600) %>
+          <% end %>
+        </p>
         <!-- link to article -->
-        <%= link_to "Lire ->", article_path(article) %>
+        <%= link_to t('home.read'), article_path(article) %>
       </figcaption>
     </figure>
   <% end %>
