@@ -55,8 +55,23 @@
             <%= cl_image_tag article.photo, class: "d-block w-100 carousel-image" %>
           </div>
           <div class="carousel-banner">
-            <h1><%= article.title_fr %></h1>
-            <p><%= truncate(strip_tags(article.content_fr.to_s), length: 450) %></p>
+            <!-- display title in fr or en -->
+            <h1>
+              <% if I18n.locale == :en %>
+                <%= article.title_en %>
+              <% else %>
+                <%= article.title_fr %>
+              <% end %>
+            </h1>
+            <!-- display truncated content in fr or en -->
+            <p>
+              <% if I18n.locale == :en %>
+                <%= truncate(strip_tags(article.content_en.to_s), length: 450) %>
+              <% else %>
+                <%= truncate(strip_tags(article.content_fr.to_s), length: 450) %>
+              <% end %>
+            </p>
+            <!-- display read link -->
             <%= link_to t('home.read'), article_path(article) %>
           </div>
         </section>
