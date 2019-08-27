@@ -15,9 +15,13 @@
   </head>
 
   <body>
+    <!-- display navbar on all pages -->
     <%= render 'shared/navbar' %>
+
+    <!-- display views -->
     <%= yield %>
 
+    <!-- display flash alerts if any -->
     <%= render 'shared/flashes' %>
 
     <%= javascript_include_tag 'application' %>

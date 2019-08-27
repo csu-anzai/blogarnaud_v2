@@ -4,7 +4,7 @@
   <title>Blog | Arnaud Rioche | <%= @entreprise.name %></title>
   <meta name="description" content="Blog | Arnaud Rioche | <%= @entreprise.name %>">
   <!-- Facebook Open Graph data -->
-  <meta property="og:title" content="<%= @entreprise.value_proposition_fr %>" />
+  <meta property="og:title" content="<%= @entreprise.name %>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<%= request.original_url %>" />
   <meta property="og:image" content="<%= image_url(@entreprise.logo) %>" />
@@ -13,7 +13,7 @@
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
-  <meta name="twitter:title" content="<%= @entreprise.value_proposition_fr %>">
+  <meta name="twitter:title" content="<%= @entreprise.name %>">
   <meta name="twitter:description" content="<%= truncate(strip_tags(@entreprise.content_fr.to_s), length: 100) %>">
   <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
   <meta name="twitter:image:src" content="<%= image_url(@entreprise.logo) %>">

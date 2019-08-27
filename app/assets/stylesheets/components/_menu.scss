@@ -1,9 +1,10 @@
 .top-menu {
   width: 100vw;
-  height: 60px;
+  height: 100px;
   position: fixed;
-  top: 40px;
-  z-index: 1000;
+  top: 0px;
+  padding-top: 40px;
+  z-index: 500;
   background-color: $light-grey;
   opacity: .9;
   display: flex;
@@ -35,8 +36,10 @@
 
 .top-menu-spacer {
   margin-top: 115px;
+  padding: 0;
 }
 
 .top-menu-banner-spacer {
   margin-top: 100px;
+  padding: 0;
 }
