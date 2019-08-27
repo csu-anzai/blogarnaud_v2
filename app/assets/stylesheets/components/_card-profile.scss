@@ -58,11 +58,15 @@
       align-items: center;
       margin-right: 3vw;
       width: 12vh;
+      min-width: 90px;
       height: 12vh;
+      min-height: 90px;
       border-radius: 2%;
       img {
         width: 5vh;
+        min-width: 34px;
         height: 5vh;
+        min-height: 34px;
       }
       figcaption {
         font-family: $body-font;
