@@ -2,16 +2,19 @@
   input {
     border-radius: 2px;
     margin-left: 2rem;
+    width: 80vw;
   }
   select {
     border-radius: 2px;
     margin-left: 2rem;
+    width: 80vw;
   }
   label {
     font-family: $headers-font;
     font-size: 1rem;
     color: $dark-blue;
     margin-left: 2rem;
+    width: 80vw;
   }
   trix-editor {
     display: block;
@@ -26,6 +29,8 @@
 
 .margin-date {
   margin-left: 1.75rem;
+  max-width: 80vh;
+  overflow: auto;
   label {
     margin-left: 0.25rem;
   }
@@ -57,8 +62,8 @@ trix-toolbar * {
 
 trix-toolbar .trix-button-row {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 trix-toolbar .trix-button-group {
