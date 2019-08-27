@@ -15,9 +15,11 @@
     height: auto;
     border-radius: 1%;
     box-shadow: 0rem .25rem .5rem 0rem rgba(23, 23, 23, 0.2);
+    margin-bottom: 1rem;
   }
   .card-entreprise-index-presentation {
     width: 70%;
+    min-width: 320px;
     padding-right: 1rem;
     padding-left: 2rem;
     display: flex;
@@ -34,7 +36,6 @@
       font-size: 1.2rem;
       color: $dark-blue;
       margin-top: 1.2rem;
-      // $$$$$$$$$$$$$$$$$$$$$$$$$$$$ see if responsive or not, otherwise change into h2 and see same trick for other bugs in display
     }
     p {
       font-family: $body-font;
