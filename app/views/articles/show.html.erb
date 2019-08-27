@@ -31,24 +31,45 @@
   <!-- create card for article title -->
   <section class="card-article-show-title" id="show-article-title">
     <section class="card-article-show-title-tag">
-     <!--  display tag icon -->
+      <!--  display tag icon -->
       <%= cl_image_tag(@article.tag.icon) %>
-      <!-- display tag name -->
-     <h2><%= @article.tag.name_fr %></h2>
+      <!-- display tag name either in fr or en -->
+      <h2>
+        <% if I18n.locale == :en %>
+          <%= @article.tag.name_en %>
+        <% else %>
+          <%= @article.tag.name_fr %>
+        <% end %>
+      </h2>
     </section>
+    <!-- display article date -->
     <p><%= @article.date %></p>
-    <h1><%= @article.title_fr %></h1>
+    <!-- display article title either in fr or en -->
+    <h1>
+      <% if I18n.locale == :en %>
+        <%= @article.title_en %>
+      <% else %>
+        <%= @article.title_fr %>
+      <% end %>
+    </h1>
+    <!-- display article photo -->
     <%= cl_image_tag @article.photo %>
   </section>
 
   <!-- create card for article content -->
   <section class="card-article-show-content" id="show-article-content">
-    <%= @article.content_fr %>
+    <!-- display article content either in fr or en -->
+    <% if I18n.locale == :en %>
+      <%= @article.content_en %>
+    <% else %>
+      <%= @article.content_fr %>
+    <% end %>
   </section>
 
   <!-- create card for article share -->
   <section class="card-article-show-share" id="show-article-share">
-    <h2>Partagez cet article !</h2>
+    <h2><%= t('share.share_article') %></h2>
+
     <section class="card-article-show-share-medias">
       <!-- linkedin -->
       <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%= request.original_url %>&title=<%= @article.title_fr %>&summary=&source=">
@@ -76,11 +97,14 @@
 
   <!-- create card for article read more -->
   <section class="card-article-show-readmore" id="show-article-readmore">
-    <h2>Lire aussi :</h2>
+    <h2><%= t('article.read_more') %></h2>
 
     <!-- check if @readmore has results or not -->
     <% if @readmore == [] || @readmore.count == 1 %>
-      <p>Désolé, il n'y a pas d'autres articles sur le thème "<%= @article.tag.name_fr %>" pour le moment</p>
+      <!-- variable to display tag in accurate language in the sorry i18n message -->
+      <% I18n.locale == :en ? tag = @article.tag.name_en : tag = @article.tag.name_fr %>
+      <p><%= t('articles.sorry', tag_name: tag) %></p>
+      <!-- <p>Désolé, il n'y a pas d'autres articles sur le thème "<%= @article.tag.name_fr %>" pour le moment</p> -->
     <!--  otherwise, iterate through results -->
     <% else %>
       <% @readmore.each do |result| %>
@@ -93,13 +117,31 @@
               <!-- header for date and tag -->
               <div class="card-article-index-header">
                 <%= result.date %> |
-                <%= result.tag.name_fr %>
+                <!-- display tag name either in fr or en -->
+                <% if I18n.locale == :en %>
+                  <%= @article.tag.name_en %>
+                <% else %>
+                  <%= @article.tag.name_fr %>
+                <% end %>
               </div>
-              <!-- title and truncated content -->
-              <h2><%= result.title_fr %></h2>
-              <p><%= truncate(strip_tags(result.content_fr.to_s), length: 600) %></p>
+              <!-- display title either in fr or en -->
+              <h2>
+                <% if I18n.locale == :en %>
+                  <%= @article.title_en %>
+                <% else %>
+                  <%= @article.title_fr %>
+                <% end %>
+              </h2>
+              <!-- display truncated content either in fr or en -->
+              <p>
+                <% if I18n.locale == :en %>
+                  <%= truncate(strip_tags(@article.content_en.to_s), length: 600) %>
+                <% else %>
+                  <%= truncate(strip_tags(@article.content_fr.to_s), length: 600) %>
+                <% end %>
+              </p>
               <!-- link to article -->
-              <%= link_to "Lire ->", article_path(result) %>
+              <%= link_to t('home.read'), article_path(@article) %>
             </figcaption>
           </figure>
         <% end %>

@@ -30,9 +30,19 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+
   # home page
   home:
     welcome_title: "Welcome to my website"
     welcome_caption: "some text to say hello to everybody and say who I am"
     profile: "Profile ->"
     read: "Read ->"
+
+  # share sections
+  share:
+    share_article: "Share this article!"
+
+  # articles
+  articles:
+    read_more: "Read more :"
+    sorry: "Sorry, there is no other article on %{tag_name} yet"

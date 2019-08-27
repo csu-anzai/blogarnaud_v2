@@ -34,7 +34,7 @@
         <!-- header for date and tag -->
         <div class="card-article-index-header">
           <%= article.date %> |
-          <!-- display tag either in fr or en -->
+          <!-- display tag name either in fr or en -->
           <% if I18n.locale == :en %>
             <%= article.tag.name_en %>
           <% else %>
