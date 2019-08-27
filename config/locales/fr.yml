@@ -15,3 +15,8 @@ fr:
   articles:
     read_more: "Lire aussi :"
     sorry: "Désolé, il n'y a pas d'autre article sur le thème %{tag_name} pour le moment"
+    top-menu:
+      illustration: "Illustration"
+      article: "Article"
+      share: "Partagez!"
+      read_also: "Lire aussi"

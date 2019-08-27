@@ -46,3 +46,8 @@ en:
   articles:
     read_more: "Read more :"
     sorry: "Sorry, there is no other article on %{tag_name} yet"
+    top-menu:
+      illustration: "Illustration"
+      article: "Content"
+      share: "Share!"
+      read_also: "Read more"
