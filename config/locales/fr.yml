@@ -46,3 +46,16 @@ fr:
       objective: "Objectif"
       presentation: "Présentation"
       share: "Partagez!"
+
+
+  # contact
+  contact:
+
+    leave_message: "Laissez-moi un message !"
+    give_details: "Laissez vos coordonnées :"
+    first_name: "Prénom"
+    last_name: "Nom"
+    email: "Adresse email"
+    write_message: "Ecrivez votre message :"
+    message: "Votre message"
+    send: "Envoyer"

@@ -45,3 +45,15 @@ en:
       presentation: "Presentation"
       share: "Share!"
 
+  # contact
+  contact:
+
+    leave_message: "Send me a note!"
+    give_details: "Please give your details:"
+    first_name: "First Name"
+    last_name: "Last Name"
+    email: "Email Address"
+    write_message: "Please write your message:"
+    message: "Your message"
+    send: "Send"
+
