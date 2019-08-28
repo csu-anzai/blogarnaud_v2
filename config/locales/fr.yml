@@ -98,6 +98,10 @@ fr:
       design_thinking: "Design Thinking"
       coding: "Programmation"
 
+      modals:
+        experience: "Expériences justifiant cette compétence"
+        education: "Formations justifiant cette compétence"
+
     work_exp:
 
       experience: "Experience"

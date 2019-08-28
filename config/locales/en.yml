@@ -97,6 +97,10 @@ en:
       design_thinking: "Design Thinking"
       coding: "Programming"
 
+      modals:
+        experience: "Track record on this skill"
+        education: "Education helping grow this skill"
+
     work_exp:
 
       experience: "Experience"
