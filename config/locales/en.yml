@@ -13,6 +13,7 @@ en:
   share:
 
     share_article: "Share this article!"
+    share_entreprise: "Spread the word!"
 
   # articles
   articles:
@@ -30,6 +31,7 @@ en:
   entreprises:
 
     learn_more: "Learn more"
+    factsheet: "Factsheet"
 
     positive_impact:
       title: "Let's work out a 'Positive Impact Project'!"

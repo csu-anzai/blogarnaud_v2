@@ -12,7 +12,8 @@ fr:
   # share sections
   share:
 
-    share_article: "Partagez cet article!"
+    share_article: "Partagez cet article !"
+    share_entreprise: "Parlez-en autour de vous !"
 
   # articles
   articles:
@@ -30,6 +31,7 @@ fr:
   entreprises:
 
     learn_more: "En savoir plus"
+    factsheet: "Factsheet"
 
     positive_impact:
       title: "Définissons un 'Positive Impact Project' !"

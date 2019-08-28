@@ -28,17 +28,21 @@
 <!-- create entreprise banner -->
 <figure class="banner" style="background-image: url('<%= cl_image_path @entreprise.photo %>')" id="show-entreprise-intro">
   <div class="container-main">
-    <!-- positive impac title -->
+    <!-- entreprise name -->
     <section class="banner-title">
       <%= @entreprise.name %>
     </section>
-    <!-- positive impact caption -->
+    <!-- display entreprise value proposition either in fr or en -->
     <section class="banner-caption">
-      <%= @entreprise.value_proposition_fr %>
+      <% if I18n.locale == :en %>
+         <%= @entreprise.value_proposition_en %>
+      <% else %>
+         <%= @entreprise.value_proposition_fr %>
+      <% end %>
     </section>
     <!-- positive impact link to landing page -->
     <button class="button-banner">
-      <a href="<%= @entreprise.website %>" target="_blank">En savoir plus</a>
+      <a href="<%= @entreprise.website %>" target="_blank"><%= t('entreprises.learn_more') %></a>
     </button>
   </div>
 </figure>
@@ -46,14 +50,18 @@
 <!-- company presentation -->
 <main class="container-main">
 
-  <!-- create card for company content -->
+  <!-- create card for company content either in fr or en -->
   <section class="card-article-show-content" id="show-entreprise-content">
-    <%= @entreprise.content_fr %>
+    <% if I18n.locale == :en %>
+      <%= @entreprise.content_en %>
+    <% else %>
+      <%= @entreprise.content_fr %>
+    <% end %>
   </section>
 
   <!-- create card for article share -->
   <section class="card-article-show-share" id="show-entreprise-share">
-    <h2>Parlez-en autour de vous !</h2>
+    <h2><%= t('share.share_entreprise') %></h2>
     <section class="card-article-show-share-medias">
       <!-- linkedin -->
       <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%= request.original_url %>&title=<%= @entreprise.name %>&summary=&source=">
@@ -81,7 +89,7 @@
 
   <!-- create card for entreprise factsheet -->
   <section class="card-article-show-readmore" id="show-entreprise-facsheet">
-    <h2>Factsheet :</h2>
+    <h2><%= t('entreprises.factsheet') %></h2>
     <p>Réfléchir à ce que je veux mettre dedans</p>
      <%#= cl_image_tag(@entreprise.logo) %>
   </section>
