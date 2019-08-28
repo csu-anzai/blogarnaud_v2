@@ -1,7 +1,9 @@
+# WORDINGS IN FRENCH
 fr:
 
-  # home pageS
+  # home page
   home:
+
     welcome_title: "Bienvenue sur mon site"
     welcome_caption: "du texte pour dire bonjour à tout le monde et qui je suis"
     profile: "Profil ->"
@@ -9,14 +11,31 @@ fr:
 
   # share sections
   share:
+
     share_article: "Partagez cet article!"
 
   # articles
   articles:
+
     read_more: "Lire aussi :"
     sorry: "Désolé, il n'y a pas d'autre article sur le thème %{tag_name} pour le moment"
+
     top-menu:
       illustration: "Illustration"
       article: "Article"
       share: "Partagez!"
       read_also: "Lire aussi"
+
+  # entreprises
+  entreprises:
+
+    learn_more: "En savoir plus"
+
+    positive_impact:
+      title: "Définissons un 'Positive Impact Project' !"
+      caption: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam
+      diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam
+      si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat. Quare hoc quidem
+      praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in
+      amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo
+      uissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat"
