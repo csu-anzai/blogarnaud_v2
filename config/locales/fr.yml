@@ -60,48 +60,48 @@ fr:
     message: "Votre message"
     send: "Envoyer"
 
-# profile
-profile:
+  # profile
+  profile:
 
-  title: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam
-  adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices
-  in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
-  caption_one: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam
-  diligentia adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si
-  minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
-  caption_two: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam
-  diligentia adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si
-  minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
+    title: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam
+    adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices
+    in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
+    caption_one: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam
+    diligentia adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si
+    minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
+    caption_two: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam
+    diligentia adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si
+    minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
 
-  competencies:
+    competencies:
 
-    skills: "Compétences"
-    leadership: "Leadership"
-    entrepreneurship: "Entreprenariat"
-    strategy: "Stratégie"
-    team_leading: "Animation d'équipes"
-    coaching: "Coaching"
-    entreprise_management: "Gestion d'entreprise"
-    strategic_planning: "Planification Stratégique"
-    mi: "Contrôle de gestion"
-    it: "IT"
-    shared_services: "Services partagés"
-    hr: "Ressources Humaines"
-    procurement: "Achats"
-    legal: "Juridique"
-    sales: "Ventes"
-    data_management: "Data Management"
-    project_management: "Direction de projets"
-    lean: "Lean Management"
-    six_sigma: "Six Sigma"
-    scrum: "Scrum"
-    design_thinking: "Design Thinking"
-    coding: "Programmation"
+      skills: "Compétences"
+      leadership: "Leadership"
+      entrepreneurship: "Entreprenariat"
+      strategy: "Stratégie"
+      team_leading: "Animation d'équipes"
+      coaching: "Coaching"
+      entreprise_management: "Gestion d'entreprise"
+      strategic_planning: "Planification Stratégique"
+      mi: "Contrôle de gestion"
+      it: "IT"
+      shared_services: "Services partagés"
+      hr: "Ressources Humaines"
+      procurement: "Achats"
+      legal: "Juridique"
+      sales: "Ventes"
+      data_management: "Data Management"
+      project_management: "Direction de projets"
+      lean: "Lean Management"
+      six_sigma: "Six Sigma"
+      scrum: "Scrum"
+      design_thinking: "Design Thinking"
+      coding: "Programmation"
 
-  work_exp:
+    work_exp:
 
-    experience: "Experience"
+      experience: "Experience"
 
-  degrees:
+    degrees:
 
-    education: "Education"
+      education: "Education"
