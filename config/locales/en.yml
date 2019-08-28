@@ -14,6 +14,7 @@ en:
 
     share_article: "Share this article!"
     share_entreprise: "Spread the word!"
+    share_profile: "Follow me!"
 
   # articles
   articles:
@@ -56,4 +57,53 @@ en:
     write_message: "Please write your message:"
     message: "Your message"
     send: "Send"
+
+# profile
+profile:
+
+  title: "His exquisite sincerity education shameless ten earnestly breakfast add. So we me unknown as improve hastily sitting forming.
+  Especially favourable compliment but thoroughly unreserved saw she themselves. Sufficient impossible him may ten insensible put
+  continuing. Oppose exeter income simple few joy cousin but twenty. Scale began quiet up short wrong in in. Sportsmen shy forfeited
+  engrossed may can."
+  caption_one: "Delightful remarkably mr on announcing themselves entreaties favourable. About to in so terms voice at. Equal an would
+  is found seems of. The particular friendship one sufficient terminated frequently themselves. It more shed went up is roof if loud case.
+  Delay music in lived noise an. Beyond genius really enough passed is up."
+  caption_two: "Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening
+  believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire
+  her called. "
+
+  competencies:
+
+    skills: "Skills"
+    leadership: "Leadership"
+    entrepreneurship: "Entrepreneurship"
+    strategy: "Strategy"
+    team_leading: "Team Management"
+    coaching: "Coaching"
+    entreprise_management: "Company Management"
+    strategic_planning: "Strategic Planning"
+    mi: "MI"
+    it: "IT"
+    shared_services: "Shared Services"
+    hr: "HR"
+    procurement: "Procurement"
+    legal: "Legal"
+    sales: "Sales"
+    data_management: "Data Management"
+    project_management: "Project Management"
+    lean: "Lean Management"
+    six_sigma: "Six Sigma"
+    scrum: "Scrum"
+    design_thinking: "Design Thinking"
+    coding: "Programming"
+
+  work_exp:
+
+    experience: "Experience"
+
+  degrees:
+
+    education: "Education"
+
+
 
