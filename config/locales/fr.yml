@@ -109,3 +109,20 @@ fr:
     degrees:
 
       education: "Education"
+      executive_certificate: "Executive Certificate"
+      profesionnal_certificate: "Certificat Professionnel"
+      gmap: "General Management Acceleration Program"
+      full_stack: "Développeur Web Full-stack"
+      capacity_entrepreneur: "Capacité à l'entreprenariat"
+      master_management: "Master en Management"
+      master_majoring: "Majeure Finance de Marché"
+      edhec_presentation: "Programme d'Executive Education intensif de formation accélérée à la Direction Générale d'entreprise
+      à destination des cadres dirigeants et des chefs d’entreprise"
+      wagon_presentation: "Coding bootcamp intensif de 9 semaines, délivrant un Certificat Professionnel homologué niveau 2
+      (équivalent Bac +3/4). Stack technique enseignée: Ruby on Rails, HTML, CSS, Bootstrap, JavaScript ES6 SQL, Git, GitHub, Heroku"
+      essca_entrepreneur_presentation: "Première école de commerce française post-bac accréditée à l’international pour l’excellence de
+      son programme, l’ESSCA délivre un diplôme Bac + 5 visé par le Ministre de l’Education nationale et revêtu du grade de Master.
+      Accréditations AASCB, EQUIS, AMBA"
+      essca_pge_presentation: "Première école de commerce française post-bac accréditée à l’international pour l’excellence de
+      son programme, l’ESSCA délivre un diplôme Bac + 5 visé par le Ministre de l’Education nationale et revêtu du grade de Master.
+      Accréditations AASCB, EQUIS, AMBA"

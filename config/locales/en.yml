@@ -108,6 +108,18 @@ en:
     degrees:
 
       education: "Education"
+      executive_certificate: "Executive Certificate"
+      profesionnal_certificate: "Professional Certificate"
+      gmap: "General Management Acceleration Program"
+      full_stack: "Full-stack Web Developer"
+      capacity_entrepreneur: "Entrepreneurship Capacity"
+      master_management: "Master in Management"
+      master_majoring: "Majoring in Capital Markets"
+      edhec_presentation: "English presentation to be done"
+      wagon_presentation: "English presentation to be done"
+      essca_entrepreneur_presentation: "English presentation to be done"
+      essca_pge_presentation: "English presentation to be done"
+
 
 
 
