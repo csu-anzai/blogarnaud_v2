@@ -201,7 +201,7 @@ fr:
 
     admin_articles: "Administration des articles"
     admin_entreprises: "Administration des entreprises"
-    admin_tag: "Administration des tags"
+    admin_tags: "Administration des tags"
     admin_contacts: "Administration des contacts"
     create_article: "Créer un article"
     create_entreprise: "Créer une entreprise"
