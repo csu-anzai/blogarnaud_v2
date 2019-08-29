@@ -65,6 +65,22 @@ en:
       presentation: "Presentation"
       share: "Share!"
 
+    form:
+      create_entreprise: "Create an entreprise"
+      update_entreprise: "Update the entreprise"
+      metadata: "Entreprise Metadata"
+      name: "Entreprise Name"
+      tag: "Tag"
+      picture: "Picture"
+      website: "Website"
+      presentation_french: "Entreprise Presentation in French"
+      value_french: "Value Proposition in French"
+      content_french: "Presentation in French"
+      presentation_english: "Entreprise Presentation in English"
+      value_english: "Value Proposition in English"
+      content_english: "Presentation in English"
+      save: "Save Entreprise"
+
   # contact
   contact:
 

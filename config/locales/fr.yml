@@ -67,6 +67,22 @@ fr:
       presentation: "Présentation"
       share: "Partagez!"
 
+    form:
+      create_entreprise: "Create une entreprise"
+      update_entreprise: "Modifier l'entreprise"
+      metadata: "Métadonnées de l'entreprise"
+      name: "Nom de l'entreprise"
+      tag: "Tag"
+      picture: "Photo"
+      website: "Site web"
+      presentation_french: "Présentation de l'entreprise en Français"
+      value_french: "Proposition de valeur en Français"
+      content_french: "Présentation en Français"
+      presentation_english: "Présentation de l'entreprise en Anglais"
+      value_english: "Proposition de valeur en Anglais"
+      content_english: "Présentation en Anglais"
+      save: "Enregistrer cette entreprise"
+
   # contact
   contact:
 
