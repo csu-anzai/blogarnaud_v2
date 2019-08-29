@@ -28,6 +28,25 @@ en:
       share: "Share!"
       read_also: "Read more"
 
+    form:
+      create_article: "Create an article"
+      update_article: "Update the article"
+      metadata: "Article Metadata"
+      date: "Date"
+      tag: "Tag"
+      picture: "Picture"
+      content_french: "Article Content in French"
+      title_french: "Article Title in French"
+      content_english: "Article Content in English"
+      title_english: "Title Content in English"
+      save: "Save Article"
+
+      top-menu:
+        admin_page: "Admin Page"
+        metadata: "Metadata"
+        french: "French"
+        english: "English"
+
   # entreprises
   entreprises:
 

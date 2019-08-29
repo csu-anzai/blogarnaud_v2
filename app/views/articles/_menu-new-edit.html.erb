@@ -5,22 +5,22 @@
       <%= image_tag('icon_menu_admin.svg') %>
     <% end %>
      <%= link_to admin_path do %>
-      Admin Page
+      <%= t('articles.form.top-menu.admin_page') %>
     <% end %>
   </section>
   <!-- link to metadata -->
   <section class="top-menu-item">
     <a href="#form-metadata"><%= image_tag('icon_menu_metadata.svg') %></a>
-    <a href="#form-metadata">Metadata</a>
+    <a href="#form-metadata"><%= t('articles.form.top-menu.metadata') %></a>
   </section>
   <!-- link to french section -->
   <section class="top-menu-item">
     <a href="#form-french"><%= image_tag('icon_menu_france.svg') %></a>
-    <a href="#form-french">Français</a>
+    <a href="#form-french"><%= t('articles.form.top-menu.french') %></a>
   </section>
   <!-- link to english section -->
   <section class="top-menu-item">
     <a href="#form-english"><%= image_tag('icon_menu_english.svg') %></a>
-    <a href="#form-english">Anglais</a>
+    <a href="#form-english"><%= t('articles.form.top-menu.english') %></a>
   </section>
 </nav>
