@@ -104,7 +104,40 @@ fr:
 
     work_exp:
 
-      experience: "Experience"
+      experience: "Expérience"
+      since: "Depuis"
+      other_exp: "Entre 2001 et 2003, différentes positions de Chef de Projet (BNP Paribas, Société Générale,
+      State Street Global Advisors)"
+
+      entrepreneur:
+        job_title: "Entrepreneur"
+        caption_one: "phrase explicative en Français"
+
+      axa:
+        job_title: "Responsable du Système d'Information Global Finance, R.H., Juridique et Achats"
+        caption_one: "phrase explicative en Français"
+
+      alfi:
+        job_title: "Senior Manager | Responsable du Pôle Conseil en Efficacité Opérationnelle et Commerciale"
+        caption_one: "phrase explicative en Français"
+        caption_two: "phrase explicative en Français"
+        caption_three: "AXA Investment Managers (2012-2015"
+        caption_four: "Caisse Nationale du Personnel Navigant (2012)"
+        caption_five: "BNP Paribas Securities Services (2011-2012)"
+        caption_six: "Natixis Asset Management (2009-2011)"
+        caption_seven: "HSBC Global Asset Management (2009)"
+
+      hsbc_am:
+        job_title: "Chef de Projet | Planification Stratégique"
+        caption_one: "phrase explicative en Français"
+
+      hsbc_fr:
+        job_title: "Chef de Projet Six Sigma Black Belt | Excellence Opérationnelle"
+        caption_one: "phrase explicative en Français"
+
+      hsbc_reim:
+        job_title: "Directeur de Projet Front-to-Back"
+        caption_one: "phrase explicative en Français"
 
     degrees:
 
