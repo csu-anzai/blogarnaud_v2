@@ -189,6 +189,19 @@ en:
       essca_entrepreneur_presentation: "English presentation to be done"
       essca_pge_presentation: "English presentation to be done"
 
+  #admin
+  admin:
+
+    admin_articles: "Administration of Articles"
+    admin_entreprises: "Administration of Entreprises"
+    admin_tag: "Administration of Tags"
+    admin_contacts: "Administration of Contacts"
+    create_article: "Create an Article"
+    create_entreprise: "Create an Entreprise"
+    create_tag: "Create a Tag"
+    see: "See"
+    update: "Update"
+    destroy: "Destroy"
 
 
 

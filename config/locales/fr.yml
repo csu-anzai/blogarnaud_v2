@@ -196,10 +196,19 @@ fr:
       son programme, l’ESSCA délivre un diplôme Bac + 5 visé par le Ministre de l’Education nationale et revêtu du grade de Master.
       Accréditations AASCB, EQUIS, AMBA"
 
+  #admin
+  admin:
 
-
-
-
+    admin_articles: "Administration des articles"
+    admin_entreprises: "Administration des entreprises"
+    admin_tag: "Administration des tags"
+    admin_contacts: "Administration des contacts"
+    create_article: "Créer un article"
+    create_entreprise: "Créer une entreprise"
+    create_tag: "Créer un tag"
+    see: "Voir"
+    update: "Modifier"
+    destroy: "Supprimer"
 
   #i18n officials yml file for date and formats translations from en to fr
   date:
