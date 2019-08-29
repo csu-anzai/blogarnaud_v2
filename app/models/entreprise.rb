@@ -3,7 +3,9 @@ class Entreprise < ApplicationRecord
 
   validates :name, presence: true
   validates :value_proposition_fr, presence: true
+  validates :value_proposition_en, presence: true
   validates :content_fr, presence: true
+  validates :content_en, presence: true
   validates :photo, presence: true
   validates :logo, presence: true
   validates :website, presence: true

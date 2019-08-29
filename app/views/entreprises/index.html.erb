@@ -30,16 +30,16 @@
   <div class="container-main">
     <!-- positive impac title -->
     <section class="banner-title">
-      Définissons un "Positive Impact Project" !
+      <%= t('entreprises.positive_impact.title') %>
     </section>
     <!-- positive impact caption -->
     <section class="banner-caption">
-      Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat. Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat
-      <%= link_to "-> Lire", positiveimpact_path %>
+      <%= t('entreprises.positive_impact.caption') %>
+      <%= link_to t('home.read'), positiveimpact_path %>
     </section>
     <!-- positive impact link to landing page -->
     <button class="button-banner">
-      <a href="http://www.google.com" target="_blank">En savoir plus</a>
+      <a href="http://www.google.com" target="_blank"><%= t('entreprises.learn_more') %></a>
     </button>
   </div>
 </figure>
@@ -56,15 +56,25 @@
       <figcaption class="card-entreprise-index-presentation">
         <!-- entreprise name -->
         <h1><%= entreprise.name %></h1>
-        <!-- value proposition -->
-        <h2><%= entreprise.value_proposition_fr %></h2>
-        <!-- entreprise content -->
+        <!-- display value proposition either in fr or en -->
+        <h2>
+          <% if I18n.locale == :en %>
+            <%= entreprise.value_proposition_en %>
+          <% else %>
+            <%= entreprise.value_proposition_fr %>
+          <% end %>
+        </h2>
+        <!-- display entreprise content either in fr or en -->
         <p>
-          <%= truncate(strip_tags(entreprise.content_fr.to_s), length: 600) %>
-          <%= link_to "  -> Lire", entreprise_path(entreprise) %>
+          <% if I18n.locale == :en %>
+            <%= truncate(strip_tags(entreprise.content_en.to_s), length: 600) %>
+          <% else %>
+            <%= truncate(strip_tags(entreprise.content_fr.to_s), length: 600) %>
+          <% end %>
+          <%= link_to t('home.read'), entreprise_path(entreprise) %>
         </p>
         <!-- entreprise link to landing page -->
-        <a href="<%= entreprise.website %>" target="_blank"><i class="fas fa-external-link-square-alt"></i>  En savoir plus</a>
+        <a href="<%= entreprise.website %>" target="_blank"><i class="fas fa-external-link-square-alt"></i>  <%= t('entreprises.learn_more') %></a>
       </figcaption>
     </figure>
   <% end %>

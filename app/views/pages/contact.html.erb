@@ -22,23 +22,23 @@
 <!-- add spacer for navbar -->
 <div class="navbar-spacer"></div>
 
-<!-- form to create an article -->
+<!-- form to create a message -->
 <main class="container-form">
-  <h1><i class="fas fa-feather"></i> Laissez-moi un message !</h1>
+  <h1><i class="fas fa-feather"></i> <%= t('contact.leave_message') %></h1>
   <%= simple_form_for(@reader) do |f| %>
 
     <!-- personal details section -->
-    <h5><i class="fas fa-caret-right"></i> Laissez vos coordonnées :</h5>
-    <%= f.input :first_name, :label => "Prénom" %>
-    <%= f.input :last_name, :label => "Nom" %>
-    <%= f.input :email, :label => "Addresse email" %>
+    <h5><i class="fas fa-caret-right"></i> <%= t('contact.give_details') %></h5>
+    <%= f.input :first_name, :label => t('contact.first_name') %>
+    <%= f.input :last_name, :label => t('contact.last_name') %>
+    <%= f.input :email, :label => t('contact.email') %>
 
     <!-- message section -->
-    <h5><i class="fas fa-caret-right"></i> Ecrivez votre message :</h5>
-    <%= f.rich_text_area :message, :label => "Votre message" %>
+    <h5><i class="fas fa-caret-right"></i> <%= t('contact.write_message') %></h5>
+    <%= f.rich_text_area :message, :label => t('contact.message')  %>
 
     <!-- submit -->
-    <%= f.submit "Envoyer", class: "button-banner" %>
+    <%= f.submit t('contact.send'), class: "button-banner" %>
 
    <% end %>
 

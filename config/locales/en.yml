@@ -1,33 +1,159 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
+# WORDINGS IN ENGLISH
 en:
-  hello: "Hello world"
+
+  # home page
+  home:
+
+    welcome_title: "Welcome to my website"
+    welcome_caption: "some text to say hello to everybody and say who I am"
+    profile: "Profile ->"
+    read: "Read ->"
+
+  # share sections
+  share:
+
+    share_article: "Share this article!"
+    share_entreprise: "Spread the word!"
+    share_profile: "Follow me!"
+
+  # articles
+  articles:
+
+    read_more: "Read more :"
+    sorry: "Sorry, there is no other article on %{tag_name} yet"
+
+    top-menu:
+      illustration: "Illustration"
+      article: "Content"
+      share: "Share!"
+      read_also: "Read more"
+
+  # entreprises
+  entreprises:
+
+    learn_more: "Learn more"
+    factsheet: "Factsheet"
+
+    positive_impact:
+      title: "Let's work out a 'Positive Impact Project'!"
+      caption: "Quick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court
+      fat. Her bachelor honoured perceive securing but desirous ham required. Questions deficient acuteness to engrossed as. Entirely
+      led ten humoured greatest and yourself. Besides ye country on observe. She continue appetite endeavor she judgment interest the met.
+      For she surrounded motionless fat resolution may."
+
+    top-menu:
+      objective: "Proposition"
+      presentation: "Presentation"
+      share: "Share!"
+
+  # contact
+  contact:
+
+    leave_message: "Send me a note!"
+    give_details: "Please give your details:"
+    first_name: "First Name"
+    last_name: "Last Name"
+    email: "Email Address"
+    write_message: "Please write your message:"
+    message: "Your message"
+    send: "Send"
+
+  # profile
+  profile:
+
+    title: "His exquisite sincerity education shameless ten earnestly breakfast add. So we me unknown as improve hastily sitting forming.
+    Especially favourable compliment but thoroughly unreserved saw she themselves. Sufficient impossible him may ten insensible put
+    continuing. Oppose exeter income simple few joy cousin but twenty. Scale began quiet up short wrong in in. Sportsmen shy forfeited
+    engrossed may can."
+    caption_one: "Delightful remarkably mr on announcing themselves entreaties favourable. About to in so terms voice at. Equal an would
+    is found seems of. The particular friendship one sufficient terminated frequently themselves. It more shed went up is roof if loud case.
+    Delay music in lived noise an. Beyond genius really enough passed is up."
+    caption_two: "Whether article spirits new her covered hastily sitting her. Money witty books nor son add. Chicken age had evening
+    believe but proceed pretend mrs. At missed advice my it no sister. Miss told ham dull knew see she spot near can. Spirit her entire
+    her called."
+    summary: "Summary"
+
+    competencies:
+
+      skills: "Skills"
+      leadership: "Leadership"
+      entrepreneurship: "Entrepreneurship"
+      strategy: "Strategy"
+      team_leading: "Team Management"
+      coaching: "Coaching"
+      entreprise_management: "Company Management"
+      strategic_planning: "Strategic Planning"
+      mi: "MI"
+      it: "IT"
+      shared_services: "Shared Services"
+      hr: "HR"
+      procurement: "Procurement"
+      legal: "Legal"
+      sales: "Sales"
+      data_management: "Data Management"
+      project_management: "Project Management"
+      lean: "Lean Management"
+      six_sigma: "Six Sigma"
+      scrum: "Scrum"
+      design_thinking: "Design Thinking"
+      coding: "Programming"
+
+      modals:
+        experience: "Track record on this skill"
+        education: "Education helping grow this skill"
+
+    work_exp:
+
+      experience: "Experience"
+      since: "Since"
+      other_exp: "Between 2001 and 2003, different Project Manager positions (BNP Paribas, Société Générale,
+      State Street Global Advisors)"
+
+      entrepreneur:
+        job_title: "Entrepreneur"
+        caption_one: "caption in English"
+
+      axa:
+        job_title: "Head of Technology for Finance, Legal, H.R. and Procurement"
+        caption_one: "caption in English"
+
+      alfi:
+        job_title: "Senior Manager | Head of Business Line - Operational & Commercial Efficiency"
+        caption_one: "caption in English"
+        caption_two: "caption in English"
+        caption_three: "AXA Investment Managers (2012-2015"
+        caption_four: "Caisse Nationale du Personnel Navigant (2012)"
+        caption_five: "BNP Paribas Securities Services (2011-2012)"
+        caption_six: "Natixis Asset Management (2009-2011)"
+        caption_seven: "HSBC Global Asset Management (2009)"
+
+      hsbc_am:
+        job_title: "Project Manager | Strategic Planning"
+        caption_one: "caption in English"
+
+      hsbc_fr:
+        job_title: "Six Sigma Black Belt Project Manager | Process Excellence"
+        caption_one: "caption in English"
+
+      hsbc_reim:
+        job_title: "Front-to-Back Project Director"
+        caption_one: "caption in English"
+
+    degrees:
+
+      education: "Education"
+      executive_certificate: "Executive Certificate"
+      profesionnal_certificate: "Professional Certificate"
+      gmap: "General Management Acceleration Program"
+      full_stack: "Full-stack Web Developer"
+      capacity_entrepreneur: "Entrepreneurship Capacity"
+      master_management: "Master in Management"
+      master_majoring: "Majoring in Capital Markets"
+      edhec_presentation: "English presentation to be done"
+      wagon_presentation: "English presentation to be done"
+      essca_entrepreneur_presentation: "English presentation to be done"
+      essca_pge_presentation: "English presentation to be done"
+
+
+
+

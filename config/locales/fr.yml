@@ -1,0 +1,162 @@
+# WORDINGS IN FRENCH
+fr:
+
+  # home page
+  home:
+
+    welcome_title: "Bienvenue sur mon site"
+    welcome_caption: "du texte pour dire bonjour à tout le monde et qui je suis"
+    profile: "Profil ->"
+    read: "Lire ->"
+
+  # share sections
+  share:
+
+    share_article: "Partagez cet article !"
+    share_entreprise: "Parlez-en autour de vous !"
+    share_profile: "Suivez-moi !"
+
+  # articles
+  articles:
+
+    read_more: "Lire aussi :"
+    sorry: "Désolé, il n'y a pas d'autre article sur le thème %{tag_name} pour le moment"
+
+    top-menu:
+      illustration: "Illustration"
+      article: "Article"
+      share: "Partagez!"
+      read_also: "Lire aussi"
+
+  # entreprises
+  entreprises:
+
+    learn_more: "En savoir plus"
+    factsheet: "Factsheet"
+
+    positive_impact:
+      title: "Définissons un 'Positive Impact Project' !"
+      caption: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam
+      diligentiam adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam
+      si minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat. Quare hoc quidem
+      praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam adhiberemus in
+      amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices in diligendo
+      uissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat"
+
+    top-menu:
+      objective: "Objectif"
+      presentation: "Présentation"
+      share: "Partagez!"
+
+  # contact
+  contact:
+
+    leave_message: "Laissez-moi un message !"
+    give_details: "Laissez vos coordonnées :"
+    first_name: "Prénom"
+    last_name: "Nom"
+    email: "Adresse email"
+    write_message: "Ecrivez votre message :"
+    message: "Votre message"
+    send: "Envoyer"
+
+  # profile
+  profile:
+
+    title: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam diligentiam
+    adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si minus felices
+    in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
+    caption_one: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam
+    diligentia adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si
+    minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
+    caption_two: "Quare hoc quidem praeceptum, cuiuscumque est, ad tollendam amicitiam valet; illud potius praecipiendum fuit, ut eam
+    diligentia adhiberemus in amicitiis comparandis, ut ne quando amare inciperemus eum, quem aliquando odisse possemus. Quin etiam si
+    minus felices in diligendo fuissemus, ferendum id Scipio potius quam inimicitiarum tempus cogitandum putabat."
+    summary: "Résumé"
+
+    competencies:
+
+      skills: "Compétences"
+      leadership: "Leadership"
+      entrepreneurship: "Entreprenariat"
+      strategy: "Stratégie"
+      team_leading: "Animation d'équipes"
+      coaching: "Coaching"
+      entreprise_management: "Gestion d'entreprise"
+      strategic_planning: "Planification Stratégique"
+      mi: "Contrôle de gestion"
+      it: "IT"
+      shared_services: "Services partagés"
+      hr: "Ressources Humaines"
+      procurement: "Achats"
+      legal: "Juridique"
+      sales: "Ventes"
+      data_management: "Data Management"
+      project_management: "Direction de projets"
+      lean: "Lean Management"
+      six_sigma: "Six Sigma"
+      scrum: "Scrum"
+      design_thinking: "Design Thinking"
+      coding: "Programmation"
+
+      modals:
+        experience: "Expériences justifiant cette compétence"
+        education: "Formations justifiant cette compétence"
+
+    work_exp:
+
+      experience: "Expérience"
+      since: "Depuis"
+      other_exp: "Entre 2001 et 2003, différentes positions de Chef de Projet (BNP Paribas, Société Générale,
+      State Street Global Advisors)"
+
+      entrepreneur:
+        job_title: "Entrepreneur"
+        caption_one: "phrase explicative en Français"
+
+      axa:
+        job_title: "Responsable du Système d'Information Global Finance, R.H., Juridique et Achats"
+        caption_one: "phrase explicative en Français"
+
+      alfi:
+        job_title: "Senior Manager | Responsable du Pôle Conseil en Efficacité Opérationnelle et Commerciale"
+        caption_one: "phrase explicative en Français"
+        caption_two: "phrase explicative en Français"
+        caption_three: "AXA Investment Managers (2012-2015"
+        caption_four: "Caisse Nationale du Personnel Navigant (2012)"
+        caption_five: "BNP Paribas Securities Services (2011-2012)"
+        caption_six: "Natixis Asset Management (2009-2011)"
+        caption_seven: "HSBC Global Asset Management (2009)"
+
+      hsbc_am:
+        job_title: "Chef de Projet | Planification Stratégique"
+        caption_one: "phrase explicative en Français"
+
+      hsbc_fr:
+        job_title: "Chef de Projet Six Sigma Black Belt | Excellence Opérationnelle"
+        caption_one: "phrase explicative en Français"
+
+      hsbc_reim:
+        job_title: "Directeur de Projet Front-to-Back"
+        caption_one: "phrase explicative en Français"
+
+    degrees:
+
+      education: "Education"
+      executive_certificate: "Executive Certificate"
+      profesionnal_certificate: "Certificat Professionnel"
+      gmap: "General Management Acceleration Program"
+      full_stack: "Développeur Web Full-stack"
+      capacity_entrepreneur: "Capacité à l'entreprenariat"
+      master_management: "Master en Management"
+      master_majoring: "Majeure Finance de Marché"
+      edhec_presentation: "Programme d'Executive Education intensif de formation accélérée à la Direction Générale d'entreprise
+      à destination des cadres dirigeants et des chefs d’entreprise"
+      wagon_presentation: "Coding bootcamp intensif de 9 semaines, délivrant un Certificat Professionnel homologué niveau 2
+      (équivalent Bac +3/4). Stack technique enseignée: Ruby on Rails, HTML, CSS, Bootstrap, JavaScript ES6 SQL, Git, GitHub, Heroku"
+      essca_entrepreneur_presentation: "Première école de commerce française post-bac accréditée à l’international pour l’excellence de
+      son programme, l’ESSCA délivre un diplôme Bac + 5 visé par le Ministre de l’Education nationale et revêtu du grade de Master.
+      Accréditations AASCB, EQUIS, AMBA"
+      essca_pge_presentation: "Première école de commerce française post-bac accréditée à l’international pour l’excellence de
+      son programme, l’ESSCA délivre un diplôme Bac + 5 visé par le Ministre de l’Education nationale et revêtu du grade de Master.
+      Accréditations AASCB, EQUIS, AMBA"
