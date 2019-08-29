@@ -28,6 +28,25 @@ en:
       share: "Share!"
       read_also: "Read more"
 
+    form:
+      create_article: "Create an article"
+      update_article: "Update the article"
+      metadata: "Article Metadata"
+      date: "Date"
+      tag: "Tag"
+      picture: "Picture"
+      content_french: "Article Content in French"
+      title_french: "Article Title in French"
+      content_english: "Article Content in English"
+      title_english: "Title Content in English"
+      save: "Save Article"
+
+      top-menu:
+        admin_page: "Admin Page"
+        metadata: "Metadata"
+        french: "French"
+        english: "English"
+
   # entreprises
   entreprises:
 
@@ -45,6 +64,22 @@ en:
       objective: "Proposition"
       presentation: "Presentation"
       share: "Share!"
+
+    form:
+      create_entreprise: "Create an entreprise"
+      update_entreprise: "Update the entreprise"
+      metadata: "Entreprise Metadata"
+      name: "Entreprise Name"
+      tag: "Tag"
+      picture: "Picture"
+      website: "Website"
+      presentation_french: "Entreprise Presentation in French"
+      value_french: "Value Proposition in French"
+      content_french: "Presentation in French"
+      presentation_english: "Entreprise Presentation in English"
+      value_english: "Value Proposition in English"
+      content_english: "Presentation in English"
+      save: "Save Entreprise"
 
   # contact
   contact:
@@ -154,6 +189,19 @@ en:
       essca_entrepreneur_presentation: "English presentation to be done"
       essca_pge_presentation: "English presentation to be done"
 
+  #admin
+  admin:
+
+    admin_articles: "Administration of Articles"
+    admin_entreprises: "Administration of Entreprises"
+    admin_tags: "Administration of Tags"
+    admin_contacts: "Administration of Contacts"
+    create_article: "Create an Article"
+    create_entreprise: "Create an Entreprise"
+    create_tag: "Create a Tag"
+    see: "See"
+    update: "Update"
+    destroy: "Destroy"
 
 
 

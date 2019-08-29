@@ -13,11 +13,11 @@
 <!-- administrate entreprises  -->
 <main class="container-main">
 
-  <h1><i class="fas fa-user-lock"></i> Administration des entreprises</h1>
+  <h1><i class="fas fa-user-lock"></i> <%= t('admin.admin_entreprises') %></h1>
 
   <!-- button to create an entreprise -->
   <button class="button-admin">
-    <%= link_to "Créer une entreprise", new_entreprise_path %>
+    <%= link_to t('admin.create_entreprise'), new_entreprise_path %>
   </button>
 
   <!-- iterate through all entreprises and create a card for each of them -->
@@ -30,25 +30,35 @@
       <figcaption class="card-entreprise-index-presentation">
         <!-- entreprise name -->
         <h1><%= entreprise.name %></h1>
-        <!-- value proposition -->
-        <h2><%= entreprise.value_proposition_fr %></h2>
-        <!-- entreprise content -->
+        <!-- display value proposition either in fr or en -->
+        <h2>
+          <% if I18n.locale == :en %>
+            <%= entreprise.value_proposition_en %>
+          <% else %>
+            <%= entreprise.value_proposition_fr %>
+          <% end %>
+        </h2>
+        <!-- display entreprise content either in fr or en -->
         <p>
-          <%= truncate(strip_tags(entreprise.content_fr.to_s), length: 600) %>
+          <% if I18n.locale == :en %>
+            <%= truncate(strip_tags(entreprise.content_en.to_s), length: 600) %>
+          <% else %>
+            <%= truncate(strip_tags(entreprise.content_fr.to_s), length: 600) %>
+          <% end %>
         </p>
         <!-- administration links -->
         <div class="card-entreprise-index-admin">
           <!-- see article -->
           <%= link_to entreprise_path(entreprise), target: "_blank" do %>
-          <i class="fas fa-eye"></i> Voir
+          <i class="fas fa-eye"></i> <%= t('admin.see') %>
           <% end %>
           <!-- update article -->
           <%= link_to edit_entreprise_path(entreprise) do %>
-            <i class="fas fa-edit"></i> Modifier
+            <i class="fas fa-edit"></i> <%= t('admin.update') %>
           <% end %>
           <!-- destroy article -->
          <%= link_to entreprise_path(entreprise), method: :delete, data: {confirm: "Supprimer cette entreprise ?"} do %>
-          <i class="fas fa-trash"></i> Supprimer
+          <i class="fas fa-trash"></i> <%= t('admin.destroy') %>
          <% end %>
         </div>
       </figcaption>
