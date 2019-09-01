@@ -1,20 +1,29 @@
+<!-- define either title in share links must be in en or fr -->
+<% I18n.locale == :en ? good_title = @article.title_en : good_title = @article.title_fr %>
+
+<!-- define either content in share links must be in en or fr -->
+<% I18n.locale == :en ? good_content = @article.content_en : good_content = @article.content_fr %>
+
+<!-- define either introduction body in email share must be in en or fr -->
+<% I18n.locale == :en ? intro = "I thought you'd find this entreprise of interest:" : intro = "J'ai pensé que cette entreprise t'intéresserait :" %>
+
 <!-- customization of the head section -->
 <% content_for :head do %>
   <!-- title and name -->
   <title>Blog | Arnaud Rioche | <%= @article.title_fr %></title>
-  <meta name="description" content="Blog | Arnaud Rioche | <%= @article.title_fr %>">
+  <meta name="description" content="Blog | Arnaud Rioche | <%= good_title %>">
   <!-- Facebook Open Graph data -->
-  <meta property="og:title" content="<%= @article.title_fr %>" />
+  <meta property="og:title" content="<%= good_title %>" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<%= request.original_url %>" />
   <meta property="og:image" content="<%= image_url(@article.photo) %>" />
-  <meta property="og:description" content="<%= truncate(strip_tags(@article.content_fr.to_s), length: 100) %>" />
+  <meta property="og:description" content="<%= truncate(strip_tags(good_content.to_s), length: 100) %>" />
   <meta property="og:site_name" content="<%= DEFAULT_META["meta_site_name"] %>" />
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
-  <meta name="twitter:title" content="<%= @article.title_fr %>">
-  <meta name="twitter:description" content="<%= truncate(strip_tags(@article.content_fr.to_s), length: 100) %>">
+  <meta name="twitter:title" content="<%= good_title %>">
+  <meta name="twitter:description" content="<%= truncate(strip_tags(good_content.to_s), length: 100) %>">
   <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
   <meta name="twitter:image:src" content="<%= image_url(@article.photo) %>">
 <% end %>
@@ -72,11 +81,11 @@
 
     <section class="card-article-show-share-medias">
       <!-- linkedin -->
-      <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%= request.original_url %>&title=<%= @article.title_fr %>&summary=&source=" id="linkedin">
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%= request.original_url %>&title=<%= good_title %>&summary=&source=" id="linkedin">
         <i class="fab fa-linkedin"></i>
       </a>
       <!-- viadeo -->
-      <a href="http://www.viadeo.com/shareit/share/?url=<%= request.original_url %>&title=<%= @article.title_fr %>">
+      <a href="http://www.viadeo.com/shareit/share/?url=<%= request.original_url %>&title=<%= good_title %>">
         <i class="fab fa-viadeo-square"></i>
       </a>
       <!-- twitter -->
@@ -88,8 +97,8 @@
         <i class="fab fa-facebook-square"></i>
       </a>
       <!-- email -->
-      <% body = "J'ai pensé que cet article t'intéresserait :\n\n#{strip_tags(@article.content_fr.to_s)}\n\nLire plus sur http://www.arnaudrioche.com" %>
-      <%= mail_to "", html_options = {:subject => @article.title_fr, :body => body} do %>
+      <% body = "#{intro}\n\n#{strip_tags(good_content.to_s)}\n\nhttp://www.arnaudrioche.com" %>
+      <%= mail_to "", html_options = {:subject => good_title, :body => body} do %>
         <i class="fas fa-envelope"></i>
       <% end %>
     </section>
