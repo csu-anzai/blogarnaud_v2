@@ -1,4 +1,6 @@
 class Entreprise < ApplicationRecord
+  after_initialize :set_default, unless: :persisted?
+
   belongs_to :tag
 
   validates :name, presence: true
@@ -28,4 +30,14 @@ class Entreprise < ApplicationRecord
                     tsearch: { prefix: true }
                   }
   multisearchable against: [:name, :value_proposition_fr, :value_proposition_en, :content_fr, :content_en, :website]
+
+  private
+
+  def set_default
+    self.linkedin_shares = 0 if self.linkedin_shares.nil?
+    self.viadeo_shares = 0 if self.viadeo_shares.nil?
+    self.twitter_shares = 0 if self.twitter_shares.nil?
+    self.facebook_shares = 0 if self.facebook_shares.nil?
+    self.mail_shares = 0 if self.mail_shares.nil?
+  end
 end
