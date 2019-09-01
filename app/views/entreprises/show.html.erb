@@ -1,3 +1,12 @@
+<!-- define either value proposition in share links must be in en or fr -->
+<% I18n.locale == :en ? good_value = @entreprise.value_proposition_en : good_value = @entreprise.value_proposition_fr %>
+
+<!-- define either content in share links must be in en or fr -->
+<% I18n.locale == :en ? good_content = @entreprise.content_en : good_content = @entreprise.content_fr %>
+
+<!-- define either introduction body in email share must be in en or fr -->
+<% I18n.locale == :en ? intro = "I thought you'd find this entreprise of interest:" : intro = "J'ai pensé que cette entreprise t'intéresserait :" %>
+
 <!-- customization of the head section -->
 <% content_for :head do %>
   <!-- title and name -->
@@ -8,13 +17,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<%= request.original_url %>" />
   <meta property="og:image" content="<%= image_url(@entreprise.logo) %>" />
-  <meta property="og:description" content="<%= truncate(strip_tags(@entreprise.content_fr.to_s), length: 100) %>" />
+  <meta property="og:description" content="<%= truncate(strip_tags(good_content.to_s), length: 100) %>" />
   <meta property="og:site_name" content="<%= DEFAULT_META["meta_site_name"] %>" />
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="<%= DEFAULT_META["twitter_account"] %>">
   <meta name="twitter:title" content="<%= @entreprise.name %>">
-  <meta name="twitter:description" content="<%= truncate(strip_tags(@entreprise.content_fr.to_s), length: 100) %>">
+  <meta name="twitter:description" content="<%= truncate(strip_tags(good_content.to_s), length: 100) %>">
   <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
   <meta name="twitter:image:src" content="<%= image_url(@entreprise.logo) %>">
 <% end %>
@@ -80,7 +89,7 @@
         <i class="fab fa-facebook-square"></i>
       </a>
       <!-- email -->
-      <% body = "J'ai pensé que cette entreprise t'intéresserait :\n\n#{strip_tags(@entreprise.value_proposition_fr.to_s)}\n\n#{strip_tags(@entreprise.content_fr.to_s)}\n\nSite web: #{@entreprise.website}\n\nLire plus sur http://www.arnaudrioche.com" %>
+      <% body = "#{intro}\n\n#{strip_tags(good_value.to_s)}\n\n#{strip_tags(good_content.to_s)}\n\nSite web: #{@entreprise.website}\n\nLire plus sur http://www.arnaudrioche.com" %>
       <%= mail_to "", html_options = {:subject => @entreprise.name, :body => body} do %>
         <i class="fas fa-envelope"></i>
       <% end %>
