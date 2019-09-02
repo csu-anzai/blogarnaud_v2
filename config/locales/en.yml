@@ -193,6 +193,7 @@ en:
   search:
 
     search_title: "Search"
+    no_result_articles: "Sorry, no article matched your query"
 
 
 

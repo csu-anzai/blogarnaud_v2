@@ -28,10 +28,8 @@ class Entreprise < ApplicationRecord
                   },
                   using: {
                     tsearch: { prefix: true }
-                  },
-                  ignoring: :accents
-  multisearchable against: [:name, :value_proposition_fr, :value_proposition_en, :content_fr, :content_en, :website],
-                  ignoring: :accents
+                  }
+  multisearchable against: [:name, :value_proposition_fr, :value_proposition_en, :content_fr, :content_en, :website]
 
   private
 

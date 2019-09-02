@@ -23,10 +23,8 @@ class Article < ApplicationRecord
                   },
                   using: {
                     tsearch: { prefix: true }
-                  },
-                  ignoring: :accents
-  multisearchable against: [:title_fr, :title_en, :content_fr, :content_en],
-                  ignoring: :accents
+                  }
+  multisearchable against: [:title_fr, :title_en, :content_fr, :content_en]
 
   private
 

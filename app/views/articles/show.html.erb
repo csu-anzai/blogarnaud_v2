@@ -113,7 +113,6 @@
       <!-- variable to display tag in accurate language in the sorry i18n message -->
       <% I18n.locale == :en ? tag = @article.tag.name_en : tag = @article.tag.name_fr %>
       <p><%= t('articles.sorry', tag_name: tag) %></p>
-      <!-- <p>Désolé, il n'y a pas d'autres articles sur le thème "<%= @article.tag.name_fr %>" pour le moment</p> -->
     <!--  otherwise, iterate through results -->
     <% else %>
       <% @readmore.each do |result| %>
