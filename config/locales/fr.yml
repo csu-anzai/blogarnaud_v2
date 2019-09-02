@@ -223,6 +223,7 @@ fr:
       change_password: "Modifiez votre mot de passe"
       new_password: "Nouveau mot de passe"
       confirm_new_password: "Confirmez votre nouveau mot de passe"
+      resend_confirmation: "Renvoyer les informations de confirmation"
 
 
 

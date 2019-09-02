@@ -216,6 +216,7 @@ en:
       change_password: "Change your password"
       new_password: "New Password"
       confirm_new_password: "Confirm your new password"
+      resend_confirmation: "Resend confirmation instructions"
 
 
 
