@@ -210,6 +210,8 @@ en:
       forgot_password: "Forgot your password?"
       not_received_confirmation_instruction: "Didn't receive confirmation instructions?"
       not_received_unlock_instruction: "Didn't receive unlock instructions?"
+      email: "Email Address"
+      password: "Password"
 
 
 

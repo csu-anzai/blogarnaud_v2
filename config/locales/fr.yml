@@ -217,6 +217,8 @@ fr:
       forgot_password: "Vous avez oublié votre mot de passe ?"
       not_received_confirmation_instruction: "Vous n'avez pas reçu vos instructions de confirmation ?"
       not_received_unlock_instruction: "Vous n'avez pas reçu vos instructions de déblocage ?"
+      email: "Adresse email"
+      password: "Mot de passe"
 
 
 
