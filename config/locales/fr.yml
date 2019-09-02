@@ -210,6 +210,16 @@ fr:
     update: "Modifier"
     destroy: "Supprimer"
 
+    devise_views:
+
+      login: "Connectez-vous"
+      signup: "Enregistrez-vous"
+      forgot_password: "Vous avez oublié votre mot de passe ?"
+      not_received_confirmation_instruction: "Vous n'avez pas reçu vos instructions de confirmation ?"
+      not_received_unlock_instruction: "Vous n'avez pas reçu vos instructions de déblocage ?"
+
+
+
   #i18n officials yml file for date and formats translations from en to fr
   date:
     abbr_day_names:

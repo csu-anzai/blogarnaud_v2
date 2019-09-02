@@ -203,5 +203,13 @@ en:
     update: "Update"
     destroy: "Destroy"
 
+    devise_views:
+
+      login: "Log in"
+      signup: "Sign up"
+      forgot_password: "Forgot your password?"
+      not_received_confirmation_instruction: "Didn't receive confirmation instructions?"
+      not_received_unlock_instruction: "Didn't receive unlock instructions?"
+
 
 
