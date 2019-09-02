@@ -195,6 +195,7 @@ en:
     search_title: "Search"
     no_result_articles: "Sorry, no article matched your query"
     no_result_entreprises: "Sorry, no entreprise matched your query"
+    use_search_bar: "Please use to search bar above to input your query"
 
 
 

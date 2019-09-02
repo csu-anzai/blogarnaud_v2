@@ -202,6 +202,7 @@ fr:
     search_title: "Rechercher"
     no_result_articles: "Désolé, aucun article ne correspond à votre requête"
     no_result_entreprises: "Désolé, aucune entreprise ne correspond à votre requête"
+    use_search_bar: "Utilisez la barre de recherche ci-dessus pour faire votre requête"
 
   #admin
   admin:

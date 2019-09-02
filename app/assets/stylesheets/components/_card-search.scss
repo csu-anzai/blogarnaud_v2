@@ -15,6 +15,9 @@
     justify-content: flex-start;
     align-items: flex-start;
     border: 1px solid $light-grey;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
     h1 {
       font-family: $headers-font;
       font-size: 1.4rem;
@@ -75,5 +78,14 @@
         }
       }
     }
+  }
+}
+
+.use-search {
+  margin-top: 2rem;
+  p {
+    font-family: $body-font;
+    font-size: 1rem;
+    color: $dark-blue;
   }
 }
