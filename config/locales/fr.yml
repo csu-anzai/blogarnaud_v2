@@ -226,6 +226,21 @@ fr:
       resend_confirmation: "Renvoyer les informations de confirmation"
       resend_unlock: "Renvoyer les instructions de déblocage"
 
+      mailer:
+
+        welcome: "Bienvenue"
+        confirm_account_email: "Vous pouvez confirmer votre email en cliquant sur le lien ci-dessous :"
+        confirm: "Confirmer"
+        hello: "Bonjour"
+        email_being_changed: "Nous vous notifions que votre email est en train d'être remplacé par"
+        email_been_changed: "Nous vous notifions que votre email a été remplacé par"
+        password_been_changed: "Nous vous notifions que votre mot de passe a été changé."
+        someone_requested_password_change: "Quelqu'un a demandé un lien pour changer votre mot de passe. Vous pouvez le faire en cliquant sur le lien ci-dessous :"
+        please_ignore: "Si vous n'êtes pas à l'origin de cette demande, merci d'ignorer cet email."
+        password_wont_change: "Votre mot de passe ne sera pas changé tant que vous n'accéderez pas au lien pour le modifier."
+        too_many_attempts: "Votre compte a été bloqué en raison d'un trop grand nombre de mauvaises tentatives d'accès."
+        click_unlock: "Cliquez sur le lien ci-dessous pour débloquer votre compte :"
+        unlock_account: "Débloquer mon compte"
 
 
   #i18n officials yml file for date and formats translations from en to fr
