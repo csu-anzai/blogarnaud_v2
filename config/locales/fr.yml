@@ -196,6 +196,14 @@ fr:
       son programme, l’ESSCA délivre un diplôme Bac + 5 visé par le Ministre de l’Education nationale et revêtu du grade de Master.
       Accréditations AASCB, EQUIS, AMBA"
 
+  #search
+  search:
+
+    search_title: "Rechercher"
+    no_result_articles: "Désolé, aucun article ne correspond à votre requête"
+    no_result_entreprises: "Désolé, aucune entreprise ne correspond à votre requête"
+    use_search_bar: "Utilisez la barre de recherche ci-dessus pour faire votre requête"
+
   #admin
   admin:
 

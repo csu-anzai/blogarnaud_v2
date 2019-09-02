@@ -51,3 +51,23 @@
     color: inherit;
   }
 }
+
+.button-search {
+  margin: 0;
+  padding: .2rem;
+  font-family: $headers-font;
+  font-size: .8rem;
+  color: $dark-blue;
+  width: auto;
+  max-width: 80px !important;
+  height: 4vh;
+  min-height: 30px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border: 1px solid $light-grey !important;
+  background-color: $light-grey;
+  &:hover {
+    color: $light-grey;
+    background-color: $dark-blue;
+  }
+}

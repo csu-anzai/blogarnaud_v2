@@ -189,6 +189,17 @@ en:
       essca_entrepreneur_presentation: "English presentation to be done"
       essca_pge_presentation: "English presentation to be done"
 
+  #search
+  search:
+
+    search_title: "Search"
+    no_result_articles: "Sorry, no article matched your query"
+    no_result_entreprises: "Sorry, no entreprise matched your query"
+    use_search_bar: "Please use to search bar above to input your query"
+
+
+
+
   #admin
   admin:
 
