@@ -201,8 +201,7 @@ fr:
 
     search_title: "Rechercher"
     no_result_articles: "Désolé, aucun article ne correspond à votre requête"
-
-
+    no_result_entreprises: "Désolé, aucune article ne correspond à votre requête"
 
   #admin
   admin:

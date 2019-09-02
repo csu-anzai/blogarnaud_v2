@@ -55,15 +55,35 @@
         <% end %>
       <% end %>
     </figure>
+
+    <!-- results and cards for entreprises -->
+    <figure class="card-search-results">
+      <h1>Entreprises</h1>
+      <!-- display message if no result returned for entreprises -->
+      <% if @result_entreprises == [] %>
+        <p><%= t('search.no_result_entreprises') %></p>
+      <!-- otherwise display all results -->
+      <% else %>
+        <% @result_entreprises.each do |entreprise| %>
+          <figure class="card-search-result">
+            <!-- article image -->
+            <%= cl_image_tag entreprise.photo, height: 300, width: 400, crop: :fill %>
+            <!-- article title and content with i18n -->
+            <figcaption class="card-search-result-summary">
+              <h2>
+                <%= entreprise.name %>
+              </h2>
+              <p>
+                <% if I18n.locale == :en %>
+                  <%= truncate(strip_tags(entreprise.content_en.to_s), length: 200) %> <%= link_to t('home.read'), entreprise_path(entreprise) %>
+                <% else %>
+                  <%= truncate(strip_tags(entreprise.content_fr.to_s), length: 200) %> <%= link_to t('home.read'), entreprise_path(entreprise) %>
+                <% end %>
+              </p>
+            </figcaption>
+          </figure>
+        <% end %>
+      <% end %>
+
   </section>
-
-
-
-  <div>
-    <% @result_entreprises.each do |entreprise| %>
-      <%= entreprise.name %>
-    <% end %>
-  </div>
-
-
 </main>
