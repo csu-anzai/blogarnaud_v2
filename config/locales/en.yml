@@ -189,6 +189,14 @@ en:
       essca_entrepreneur_presentation: "English presentation to be done"
       essca_pge_presentation: "English presentation to be done"
 
+  #search
+  search:
+
+    search_title: "Search"
+
+
+
+
   #admin
   admin:
 

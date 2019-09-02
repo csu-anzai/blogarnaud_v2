@@ -1,1 +1,22 @@
-search.html.erb
+<!-- customization of the head section -->
+<% content_for :head do %>
+  <!-- title and name -->
+  <title>Blog | Arnaud Rioche | <%= t('search.search_title') %></title>
+<% end %>
+
+<!-- add spacer for navbar -->
+<div class="navbar-spacer"></div>
+
+<main class="container-main">
+  <!-- add search bar  -->
+  <form class="search-form">
+    <%= form_tag search_path, method: :get do %>
+      <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: t('search.search_title')
+      %>
+      <%= submit_tag t('search.search_title'), class: "button-search" %>
+    <% end %>
+  </form>
+</main>
