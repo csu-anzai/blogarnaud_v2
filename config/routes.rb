@@ -20,6 +20,8 @@ Rails.application.routes.draw do
     get "/profile", to: 'pages#profile', as: "profile"
     # route for contact
     get "/contact", to: 'pages#contact', as: "contact"
+    # route for search
+    get "/search", to: 'pages#search', as: "search"
     # route for admin
     get "/admin", to: 'admins#admin', as: "admin"
     # route for admin articles
