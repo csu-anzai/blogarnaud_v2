@@ -217,6 +217,7 @@ en:
       new_password: "New Password"
       confirm_new_password: "Confirm your new password"
       resend_confirmation: "Resend confirmation instructions"
+      resend_unlock: "Resend unlock instructions"
 
 
 
