@@ -219,6 +219,10 @@ fr:
       not_received_unlock_instruction: "Vous n'avez pas reçu vos instructions de déblocage ?"
       email: "Adresse email"
       password: "Mot de passe"
+      send_reset_password_instruction: "Recevoir les instructions"
+      change_password: "Modifiez votre mot de passe"
+      new_password: "Nouveau mot de passe"
+      confirm_new_password: "Confirmez votre nouveau mot de passe"
 
 
 

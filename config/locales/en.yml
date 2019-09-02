@@ -212,6 +212,10 @@ en:
       not_received_unlock_instruction: "Didn't receive unlock instructions?"
       email: "Email Address"
       password: "Password"
+      send_reset_password_instruction: "Send me instructions"
+      change_password: "Change your password"
+      new_password: "New Password"
+      confirm_new_password: "Confirm your new password"
 
 
 
