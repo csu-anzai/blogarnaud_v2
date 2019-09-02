@@ -15,6 +15,5 @@ class PagesController < ApplicationController
   def search
     @result_articles = Article.global_search(params[:query])
     @result_entreprises = Entreprise.global_search(params[:query])
-    # @results = PgSearch.multisearch(params[:query])
   end
 end
