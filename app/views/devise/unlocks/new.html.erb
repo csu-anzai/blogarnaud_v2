@@ -1,19 +1,31 @@
-<h2>Resend unlock instructions</h2>
-
-<%= simple_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
-  <%= f.error_notification %>
-  <%= f.full_error :unlock_token %>
-
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit, "Resend unlock instructions" %>
-  </div>
+<!-- customization of the head section -->
+<% content_for :head do %>
+  <!-- title and name -->
+  <title>Blog | Arnaud Rioche | <%= t('admin.devise_views.resend_unlock') %></title>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<!-- add spacer for navbar -->
+<div class="navbar-spacer"></div>
+
+<main class="container-main">
+  <h2><%= t('admin.devise_views.resend_unlock') %></h2>
+
+  <%= simple_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+    <%= f.error_notification %>
+    <%= f.full_error :unlock_token %>
+
+    <div class="form-inputs">
+      <%= f.input :email,
+                  :label => t('admin.devise_views.email'),
+                  required: true,
+                  autofocus: true,
+                  input_html: { autocomplete: "email" } %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, t('admin.devise_views.send_reset_password_instruction'), class: "button-admin" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</main>

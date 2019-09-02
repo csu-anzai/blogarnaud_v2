@@ -8,22 +8,24 @@
 <div class="navbar-spacer"></div>
 
 <main class="container-main">
-  <h2>Log in</h2>
+  <h2><%= t('admin.devise_views.login') %></h2>
 
   <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="form-inputs">
       <%= f.input :email,
+                  :label => t('admin.devise_views.email'),
                   required: false,
                   autofocus: true,
                   input_html: { autocomplete: "email" } %>
       <%= f.input :password,
+                  :label => t('admin.devise_views.password'),
                   required: false,
                   input_html: { autocomplete: "current-password" } %>
       <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, "Log in", class: "button-admin" %>
+      <%= f.button :submit, t('admin.devise_views.login'), class: "button-admin" %>
     </div>
   <% end %>
 
