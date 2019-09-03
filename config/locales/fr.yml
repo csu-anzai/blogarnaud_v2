@@ -207,6 +207,7 @@ fr:
   #admin
   admin:
 
+    admin_main: "Menu d'administration du site"
     admin_articles: "Administration des articles"
     admin_entreprises: "Administration des entreprises"
     admin_tags: "Administration des tags"
