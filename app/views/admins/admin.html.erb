@@ -10,19 +10,82 @@
 <!-- add spacer for menu -->
 <div class="top-menu-spacer"></div>
 
-<!-- administrate articles  -->
+<!-- administration dashboard  -->
 <main class="container-main">
 
-  <h1><i class="fas fa-user-lock"></i> Menu d'administration du site</h1>
+  <h1><i class="fas fa-user-lock"></i> <%= t('admin.admin_main') %></h1>
 
-  <h3><%= @articles.count %> articles en ligne</h3>
-  <h3><%= @entreprises.count %> entreprises en ligne</h3>
-  <h3><%= @tags.count %> tags en ligne</h3>
-  <h3><%= @readers.count %> contacts ont laissé des messages</h3>
-  <h3><%= @users.count %> utilisateurs référencés sur le site</h3>
-
-  <h1>Ajouter nb par thème en itérant dans la base de données et en faisant des search, et ajouter des stats
-  sur les réseaux sociaux</h1>
-
+  <!-- accordion to display each admin section -->
+  <section class="accordion-admin">
+    <ul>
+      <!-- contacts -->
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Contacts (<%= @readers.count %>)</h2>
+        <p>
+          <% @readers.each do |reader| %>
+            <%= reader.first_name %> <%= reader.last_name %> |
+          <% end %>
+        </p>
+      </li>
+      <!-- articles -->
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Articles (<%= @articles.count %>)</h2>
+        <p>
+          <% @tags.each do |tag| %>
+            <% if I18n.locale == :en %>
+              <%= tag.name_en %> : <%= Article.global_search(tag.name_en).count %> |
+            <% else %>
+              <%= tag.name_fr %> : <%= Article.global_search(tag.name_fr).count %> |
+            <% end %>
+          <% end %>
+        </p>
+      </li>
+      <!-- entreprises -->
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Entreprises (<%= @entreprises.count %>)</h2>
+        <p>
+          <% @tags.each do |tag| %>
+            <% if I18n.locale == :en %>
+              <%= tag.name_en %> : <%= Entreprise.global_search(tag.name_en).count %> |
+            <% else %>
+              <%= tag.name_fr %> : <%= Entreprise.global_search(tag.name_fr).count %> |
+            <% end %>
+          <% end %>
+        </p>
+      </li>
+      <!-- tags -->
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Tags (<%= @tags.count %>)</h2>
+        <p>
+          <% @tags.each do |tag| %>
+            <% if I18n.locale == :en %>
+              <%= tag.name_en %> |
+            <% else %>
+              <%= tag.name_fr %> |
+            <% end %>
+          <% end %>
+        </p>
+      </li>
+      <!-- users -->
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>Users (<%= @users.count %>)</h2>
+        <p>
+          <% @users.each do |user| %>
+            <%= user.email %> |
+          <% end %>
+        </p>
+      </li>
+    </ul>
+  </section>
 
 </main>

@@ -197,12 +197,10 @@ en:
     no_result_entreprises: "Sorry, no entreprise matched your query"
     use_search_bar: "Please use to search bar above to input your query"
 
-
-
-
   #admin
   admin:
 
+    admin_main: "Website Administration Menu"
     admin_articles: "Administration of Articles"
     admin_entreprises: "Administration of Entreprises"
     admin_tags: "Administration of Tags"
